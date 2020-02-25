@@ -1,0 +1,58 @@
+<div class= "icon-bar">
+  <div class= "icons">
+    <div class= "icon icon1">
+      健康
+        <i class="fas fa-walking"></i>
+    </div>
+    <div class= "icon icon2">
+      趣味
+    </div>
+    <div class= "icon icon3">
+      ペット
+    </div>
+    <div class= "icon icon4">
+      風景
+    </div>
+    <div class= "icon icon5">
+      旅行
+    </div>
+    <div class= "icon icon6">
+      食べ物
+    </div>
+  </div>
+</div>
+
+<div class= "main">
+  <div class= "contents">
+    <div class= "contents-box">
+      <% @posts.each do |post| %>
+        <div class="contents_post" style="background-image: url(<%= post.image %>);">
+          <div class="more">
+            <span><%= image_tag 'arrow_top2.png' %></span> 
+            <ul class="more_list">
+              <li>
+                <%= link_to '詳細', "/posts/#{post.id}", method: :get %>
+              </li>
+              <li>
+                <%= link_to '編集', "/posts/#{post.id}/edit", method: :get %>
+              </li>
+              <li>
+                <%= link_to '削除', "/posts/#{post.id}", method: :delete %>
+              </li>
+            </ul>
+          </div>
+          <%= simple_format(post.text) %>
+          <span class="name">
+            <%= post.name %>
+          </span>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>
+    Copyright HAJIME 2020.
+  </p>
+</footer>

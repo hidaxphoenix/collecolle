@@ -1,0 +1,72 @@
+.icon-bar{
+  display: flex;
+  background-color: rgb(248, 173, 160);
+  height: 60px;
+  // margin-top: 60px;
+  position: fixed;
+  top: 60px;
+  z-index: 98;
+  width: 100%;
+  
+  .icons{
+    display: flex;
+    margin: 0 auto;
+    .icon {
+      margin: 5px 10px 5px 20px;
+      line-height: 50px;
+      width: 140px;
+      text-align: center;
+      font-size: 15px;
+      background-color: white;
+      border-radius: 7px;
+    }
+    .icon1{
+      .fas fa-walking{
+        color: yellowgreen;
+        float:left;
+      }
+    }
+    .icon2{
+    }
+    .icon3{
+    }
+    .icon4{
+    }
+    .icon5{
+    }
+    .icon6{
+    }
+  }
+}
+
+.main{
+  width: 100%;
+  height: auto;
+  background-color: white;
+  // float: left;
+  margin-top: 120px;
+  // position: relative;
+
+  .contents{
+    height: 100%;
+    width: 1200px;    
+    // margin: 20px auto;
+    z-index: 10;
+    // max-width: 400px;
+    // max-height: 300px;
+    .contents-box{
+      padding: 30px;
+      .contents_post{
+      width: 400px;
+      height: 300px;
+      margin: 20px 0;
+      padding: 30px;
+      color: #fff;
+      background-size: 400px 300px;
+      // background-position: center center;
+      border-radius: 3px;
+      box-shadow: 0 0 10px rgba(41,41,41,0.2);
+      }
+    }
+  }
+}
