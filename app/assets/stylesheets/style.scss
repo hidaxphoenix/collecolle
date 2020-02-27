@@ -1,5 +1,9 @@
+body{
+  background-color: #FBF8E9;
+}
+
 .header{
-  background-color: #FBF8E9;;
+  background-color: #FBF8E9;
   width: 100%;
   height: 60px;
   position: fixed;
@@ -10,11 +14,16 @@
     justify-content: space-between;
     line-height: 60px;
     .header-title{
-      margin: 0 230px;
+      margin: 0 0 0 230px;
       font-size: 30px;
     }
     .sub-title{
+      line-height: 40px;
+      margin-right: 400px;
       color: #4E2F14;
+      height: 30px;
+      font-size: 13px;
+      letter-spacing: 0.15em;
       border-bottom: 1px solid rgba(234,87,4,0.4);
       font-family: 'FOT-筑紫A丸ゴシック Std B', '游ゴシック Medium', 'Yu Gothic Medium', '游ゴシック体', YuGothic, 'Hiragino Sans', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, sans-serif;
     }
@@ -68,7 +77,7 @@
         display: inline-block;
         margin-right: 50px;
         text-decoration: none;
-        background: #faa21e;/*ボタン色*/
+        background: #EA5704;/*ボタン色*/
         color: #FFF;
         border-radius: 3px;
       }
@@ -96,6 +105,7 @@ footer{
 }
 
 
+
 .form {
   margin-top: 65px;
   h3 {
@@ -114,13 +124,13 @@ footer{
     font-family: "游ゴシック", "YuGothic";
   }
   input[type="submit"] {
-    background-color: pink;
+    background-color: #EA5704;
     border-radius: 20px;
     color: #fff;
     border: 0;
     font-size: 18px;
     &:hover {
-      background-color: lighten(pink, 10%);
+      background-color: #EA5704;
     }
   }
 }
@@ -137,5 +147,20 @@ footer{
     letter-spacing: 0.15em;
     font-size: 16px;
     color: #666;
+  }
+}
+
+div.contents.row{
+  margin-top: 60px;
+  .content_post{
+    width: 400px;
+    height: 300px;
+    margin: 20px 0;
+    padding: 30px;
+    color: #fff;
+    background-size: 400px 300px;
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgba(41,41,41,0.2);
+    position: relative;
   }
 }
