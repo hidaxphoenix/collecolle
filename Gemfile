@@ -66,3 +66,5 @@ gem "font-awesome-sass"
 gem 'devise'
 gem "font-awesome-rails"
 gem 'kaminari'
+gem 'devise-i18n'
+gem 'devise-i18n-views'
