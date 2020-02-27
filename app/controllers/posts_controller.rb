@@ -3,7 +3,7 @@ before_action :set_post, only: [:edit, :show]
 before_action :move_to_index, except: [:index, :show]
 
   def index
-    @posts = Post.all
+    @posts = Post.includes(:user).order("created_at DESC").page(params[:page]).per(5)
   end
 
   def new
@@ -28,12 +28,14 @@ before_action :move_to_index, except: [:index, :show]
   end
 
   def show
+    @comment = Comment.new
+    @commnets = @post.comments.includes(:user)
   end
 
 
   private
   def post_params
-    params.require(:post).permit(:name, :image, :text)
+    params.require(:post).permit(:image, :text).merge(user_id: current_user.id)
   end
 
   def set_post

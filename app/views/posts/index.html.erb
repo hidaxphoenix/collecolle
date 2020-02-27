@@ -1,23 +1,30 @@
 <div class= "icon-bar">
   <div class= "icons">
     <div class= "icon icon1">
-      健康
-        <i class="fas fa-walking"></i>
+      <div class="box1"><i class="fas fa-walking fa-2x my-health"></i></div>
+      <div class= "genre">健康</div>
     </div>
+
+
     <div class= "icon icon2">
-      趣味
+    <div class="box1"><i class="fas fa-users fa-2x my-hobby"></i></div>
+      <div  class= "genre">趣味</div>
     </div>
     <div class= "icon icon3">
-      ペット
+      <div class="box1"><i class="fas fa-paw fa-2x my-pet"></i></div>
+      <div  class= "genre">ペット</div>
     </div>
     <div class= "icon icon4">
-      風景
+      <div class="box1"><i class="fas fa-mountain fa-2x my-view"></i></div>
+      <div  class= "genre">風景</div>
     </div>
     <div class= "icon icon5">
-      旅行
+      <div class="box1"><i class="fas fa-plane fa-2x my-travel"></i></div>
+      <div  class= "genre">旅行</div>
     </div>
     <div class= "icon icon6">
-      食べ物
+      <div class="box1"><i class="fas fa-utensils fa-2x my-food"></i></div>
+      <div  class= "genre">食べ物</div>
     </div>
   </div>
 </div>
@@ -26,27 +33,9 @@
   <div class= "contents">
     <div class= "contents-box">
       <% @posts.each do |post| %>
-        <div class="contents_post" style="background-image: url(<%= post.image %>);">
-          <div class="more">
-            <span><%= image_tag 'arrow_top2.png' %></span> 
-            <ul class="more_list">
-              <li>
-                <%= link_to '詳細', "/posts/#{post.id}", method: :get %>
-              </li>
-              <li>
-                <%= link_to '編集', "/posts/#{post.id}/edit", method: :get %>
-              </li>
-              <li>
-                <%= link_to '削除', "/posts/#{post.id}", method: :delete %>
-              </li>
-            </ul>
-          </div>
-          <%= simple_format(post.text) %>
-          <span class="name">
-            <%= post.name %>
-          </span>
-        </div>
+        <%= render partial:"post",locals: { post: post } %>
       <% end %>
+      <%= paginate(@posts) %>
     </div>
   </div>
 </div>

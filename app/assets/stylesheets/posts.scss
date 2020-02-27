@@ -1,8 +1,7 @@
 .icon-bar{
   display: flex;
-  background-color: rgb(248, 173, 160);
+  background-color: #FBF8E9;;
   height: 60px;
-  // margin-top: 60px;
   position: fixed;
   top: 60px;
   z-index: 98;
@@ -11,6 +10,7 @@
   .icons{
     display: flex;
     margin: 0 auto;
+    color: #4E2F14;
     .icon {
       margin: 5px 10px 5px 20px;
       line-height: 50px;
@@ -19,22 +19,52 @@
       font-size: 15px;
       background-color: white;
       border-radius: 7px;
+      position: relative;
+      display: flex;
     }
     .icon1{
-      .fas fa-walking{
-        color: yellowgreen;
-        float:left;
+      
+      .my-health{
+        width: 50px;
+        color: red;
       }
     }
     .icon2{
+      .my-hobby{
+        width: 50px;
+        color: rgb(25, 55, 226);
+      }
     }
     .icon3{
+      .my-pet{
+        width: 50px;
+        color: rgb(214, 116, 3);
+      }
     }
     .icon4{
+      .my-view{
+        width: 50px;
+        color: rgb(30, 165, 75);
+      }
     }
     .icon5{
+      .my-travel{
+        width: 50px;
+        color: rgb(46, 184, 226);
+      }
     }
     .icon6{
+      .my-food{
+        width: 50px;
+        color: rgb(233, 143, 7);
+      }
+    }
+    .box1{
+      margin: 5px;
+    }
+    .genre{
+      text-align: center;
+      font-size: 20px;
     }
   }
 }
@@ -42,18 +72,13 @@
 .main{
   width: 100%;
   height: auto;
-  background-color: white;
-  // float: left;
+  background-color: #FBF8E9;;
   margin-top: 120px;
-  // position: relative;
 
   .contents{
     height: 100%;
     width: 1200px;    
-    // margin: 20px auto;
     z-index: 10;
-    // max-width: 400px;
-    // max-height: 300px;
     .contents-box{
       padding: 30px;
       .contents_post{
@@ -63,7 +88,6 @@
       padding: 30px;
       color: #fff;
       background-size: 400px 300px;
-      // background-position: center center;
       border-radius: 3px;
       box-shadow: 0 0 10px rgba(41,41,41,0.2);
       }

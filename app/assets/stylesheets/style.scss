@@ -1,5 +1,5 @@
 .header{
-  background-color: white;
+  background-color: #FBF8E9;;
   width: 100%;
   height: 60px;
   position: fixed;
@@ -9,25 +9,75 @@
     display: flex;
     justify-content: space-between;
     line-height: 60px;
-    h1.grid{
+    .header-title{
       margin: 0 230px;
       font-size: 30px;
     }
-    .user_nav_grid{
-      margin-right: 120px;
-      .post{      
-        margin: 0 100px 0 80px;
+    .sub-title{
+      color: #4E2F14;
+      border-bottom: 1px solid rgba(234,87,4,0.4);
+      font-family: 'FOT-筑紫A丸ゴシック Std B', '游ゴシック Medium', 'Yu Gothic Medium', '游ゴシック体', YuGothic, 'Hiragino Sans', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, sans-serif;
+    }
+    .user_nav_grid {
+      position: relative;
+      height: 60px;
+      margin-right: 300px;
+      span {
+        float: left;
+        width: 150px;
+        height: 50px;
+        font-size: 1em;
+        cursor: pointer;
+        &:after {
+          content: '▼';
+          font-size: .7em;
+        }
+        &:hover ul {
+          color: green;
+          display: block;
+        }
       }
     }
-    .grid{
-      margin-right: 140px;
+    ul {
+      display: none;
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      left: 50px;
+      border-left: 1px solid #d8d8d8;
+      border-right: 1px solid #d8d8d8;
+      box-shadow: 1px 2px 5px rgba(0,0,0,0.1);
+      li {
+        background-color: #f0f0f0;
+        a {
+          display: block;
+          padding: 10px 20px;
+          text-align: left;
+          border-bottom: 1px solid #d8d8d8;
+        }
+      }
+    }
+    .header-right-box{
+      margin-right: 250px;
+      .btn-square-shadow {
+        line-height: 50px;
+        margin-top: 5px;
+        text-align: center;
+        height: 50px;
+        width: 100px;
+        display: inline-block;
+        margin-right: 50px;
+        text-decoration: none;
+        background: #faa21e;/*ボタン色*/
+        color: #FFF;
+        border-radius: 3px;
+      }
       .post{
         margin: 0 80px 0 0;
       }
     }
-    
     a{
-      color:rgba(194, 28, 6, 0.986);
+      color:#EA5704;
       text-decoration: none;
     }
   }
