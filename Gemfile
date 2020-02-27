@@ -65,3 +65,4 @@ gem 'pry-rails'
 gem "font-awesome-sass"
 gem 'devise'
 gem "font-awesome-rails"
+gem 'kaminari'
