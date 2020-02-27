@@ -165,3 +165,18 @@ div.contents.row{
     position: relative;
   }
 }
+div.contents.row-show{
+  margin-top: 60px;
+  width: 100%;
+  height:auto;
+  .contents-post-box-show{
+    height: 500px;
+    width: 600px;
+    margin: 0 auto;
+    .contents-post-show{
+      height: 400px;
+      width: 600px;
+    }
+
+  }
+}
