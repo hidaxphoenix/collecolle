@@ -6,4 +6,12 @@ class Post < ApplicationRecord
   has_many :liked_users, through: :likes, source: :user
   has_many :posttags
   has_many :tags, through: :posttags
+
+  def self.search(search)
+    if search
+      Post.where('text LIKE(?)', "%#{search}%")
+    else
+      Post.all
+    end
+  end
 end
