@@ -35,6 +35,7 @@ before_action :move_to_index, except: [:index, :show]
 
 
   private
+  
   def post_params
     params.require(:post).permit(:image, :text, :tag_ids).merge(user_id: current_user.id)
   end
