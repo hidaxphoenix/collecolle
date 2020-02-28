@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
 before_action :set_post, only: [:edit, :show]
-before_action :move_to_index, except: [:index, :show]
+before_action :move_to_index, except: [:index, :show, :search]
 
   def index
     @posts = Post.includes(:user).order("created_at DESC").page(params[:page]).per(12)
@@ -31,6 +31,10 @@ before_action :move_to_index, except: [:index, :show]
     @comment = Comment.new
     @commnets = @post.comments.includes(:user)
     @like = Like.new
+  end
+
+  def search
+    @posts = Post.search(params[:keyword])
   end
 
 
