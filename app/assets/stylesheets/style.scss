@@ -35,12 +35,12 @@ body{
       .search-input{
         height: 35px;
         width: 250px;
-        border-radius: 4px;
+        border-radius: 8px;
       }
       .search-btn{
         height: 35px;
         width: 60px;
-        border-radius: 4px;
+        border-radius: 8px;
       }
     }
 
@@ -57,7 +57,7 @@ body{
         text-decoration: none;
         background: #EA5704;/*ボタン色*/
         color: #FFF;
-        border-radius: 3px;
+        border-radius: 8px;
       }
       .post{
         margin: 0 80px 0 0;
@@ -130,6 +130,9 @@ footer{
 h2{
   margin-top: 80px;
   margin-left: 390px;
+  letter-spacing: 0.15em;
+  color: #EA5704;
+  font-family: 'FOT-筑紫A丸ゴシック Std B', '游ゴシック Medium', 'Yu Gothic Medium', '游ゴシック体', YuGothic, 'Hiragino Sans', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, sans-serif;
 }
 .contents-row-login{
   width: 100%;
@@ -138,11 +141,35 @@ h2{
   margin-top: 0;
   margin-bottom: 0;
   max-width: 660px;
+  color: #EA5704;
+  
 input{
   width: 600px;
   height: 40px;
   margin-bottom: 20px;
+  letter-spacing: 0.15em;
+  border-radius: 8px;
+  font-family: 'FOT-筑紫A丸ゴシック Std B', '游ゴシック Medium', 'Yu Gothic Medium', '游ゴシック体', YuGothic, 'Hiragino Sans', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, sans-serif;
 }
+.login-btn{
+  background-color: #EA5704;
+  color: white;
+}
+}
+.login-memo1{
+  margin-top: 30px;
+  margin-left: 390px;
+  a{
+    text-decoration: none;
+    color:  #EA5704;
+  }
+}
+.login-memo2{
+  margin-left: 390px;
+  a{
+    text-decoration: none;
+    color:  #EA5704;
+  }
 }
 
 
