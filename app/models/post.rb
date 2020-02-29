@@ -1,11 +1,11 @@
 class Post < ApplicationRecord
   validates :text, presence: true
   belongs_to :user
-  has_many :comments
-  has_many :likes
+  has_many :comments, dependent: :destroy
+  has_many :likes, dependent: :destroy
   has_many :liked_users, through: :likes, source: :user
-  has_many :posttags
-  has_many :tags, through: :posttags
+  has_many :posttags,  dependent: :destroy
+  has_many :tags, through: :posttags 
 
   def self.search(search)
     if search

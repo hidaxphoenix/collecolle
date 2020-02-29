@@ -21,5 +21,7 @@
       <span>投稿者</span><%= post.user.nickname %>
     </a>
   </span>
+  <div class="photo-tag-name">
+    <%= "# #{post.tags&.first&.name}" %>
+  </div>
 </div>
-<%= "# #{post.tags&.first&.name}" %>
