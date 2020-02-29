@@ -81,15 +81,10 @@
   .contents{
     height: 100%;
     width: auto;
-    // width: 800px;　戻すかも
     z-index: 10;
     margin: 0 auto;
     overflow-x: scroll;
     .contents-box{
-      // padding: 30px;
-      // display: flex;
-      // flex-flow: row wrap;
-
       width: 100%;
       margin-left: auto;
       margin-right: auto;
@@ -98,26 +93,7 @@
       max-width: 660px;
       display: inline-block;
       white-space: nowrap;
-
       .contents_post{
-      // margin: 18px;
-      // border: medium solid black;
-      // border-width: thin;
-      // // padding: 30px;
-      // height: 360px;
-      // width: 480px;
-      // color: #fff;
-      // background-size: 100% 100%;
-      // border-radius: 3px;
-      // // box-shadow: 0 0 10px rgba(41,41,41,0.2);
-      // position: relative;
-      // background-repeat: no-repeat;
-      // background-position: center center;
-      // background-size: contain;
-      // min-height: 250px;
-      // min-width: 300px;
-      // max-height: 600px;
-      // max-width: 800px;padding: 30px;
       position: relative;
       height: 400px;
       width: 600px;
