@@ -25,7 +25,7 @@
           <span>投稿者</span><%= @post.user.nickname %>
         </a>
       </span>
-      <h3>いいね件数: <%= @post.likes.count %></h3>
+      <h4>いいね件数: <%= @post.likes.count %></h4>
       
     </div>
   </div>
@@ -33,12 +33,11 @@
     <% if current_user %>
       <%= form_with(model: [@post,@comment],local: true) do |form| %>
         <%= form.text_area :text, placeholder: "コメントする", rows: "2" %>
-        <%= form.submit "SEND" %>
+        <%= form.submit "送信", class: "show-btn" %>
       <% end %>
     <% else %>
-      <strong><p>※※※　コメントの投稿は新規登録/ログインが必要です　※※※</p></strong>
+      <strong><p>※※※　"コメントの投稿"と"いいね"を付けるには新規登録/ログインが必要です　※※※</p></strong>
     <% end %>
-
     <div class="comments">
       <h4>＜コメント一覧＞</h4>
       <% if @comments %>
