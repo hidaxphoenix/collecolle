@@ -15,12 +15,12 @@ body{
     justify-content: space-between;
     line-height: 60px;
     .header-title{
-      margin: 0 0 0 230px;
+      margin: 0 0 0 180px;
       font-size: 30px;
     }
     .sub-title{
       position: absolute;
-      left: 360px;
+      left: 340px;
       line-height: 40px;
       color: #4E2F14;
       height: 30px;
@@ -31,7 +31,7 @@ body{
     }
     .search-form{
       position: absolute;
-      left: 550px;
+      left: 590px;
       .search-input{
         height: 35px;
         width: 250px;
@@ -86,7 +86,7 @@ body{
       }
     }
     .header-right-box{
-      margin-right: 220px;
+      margin-right: 180px;
       .btn-square-shadow {
         line-height: 40px;
         margin-top: 5px;
