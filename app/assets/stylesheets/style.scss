@@ -343,6 +343,7 @@ div.contents.row-show{
         z-index: 2;
         font-weight: bold;
         text-shadow: 0 0 2px #EA5704, 0 0 1px #EA5704, 0 0 1px #EA5704;
+        width: 600px;
       }
       .name{
         position: absolute;
@@ -382,8 +383,11 @@ div.contents.row-show{
     p{
       color: #EA5704;
       text-align: center;
-      font-size: 15px;
+      font-size: 13px;
       margin-left: 40px;
+      width: 600px;
+      margin: 0 auto;
+      text-align: center;
     }
     .comments{
       color: #EA5704;
