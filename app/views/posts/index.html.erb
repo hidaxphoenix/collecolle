@@ -1,30 +1,32 @@
 <div class= "icon-bar">
   <div class= "icons">
     <div class= "icon icon1">
-      <div class="box1"><i class="fas fa-walking fa-2x my-health"></i></div>
-      <div class= "genre">健康</div>
+    <div class="box1"><i class="fas fa-search-minus fa-1x my-health"></i></div>
+      <div class= "genre">ホビー</div>
     </div>
-
-
     <div class= "icon icon2">
-    <div class="box1"><i class="fas fa-users fa-2x my-hobby"></i></div>
-      <div  class= "genre">趣味</div>
+    <div class="box1"><i class="fas fa-search-minus fa-1x my-hobby"></i></div>
+      <div  class= "genre">本　音楽</div>
     </div>
     <div class= "icon icon3">
-      <div class="box1"><i class="fas fa-paw fa-2x my-pet"></i></div>
-      <div  class= "genre">ペット</div>
+      <div class="box1"><i class="fas fa-search-minus fa-1x my-pet"></i></div>
+      <div  class= "genre">アパレル</div>
     </div>
     <div class= "icon icon4">
-      <div class="box1"><i class="fas fa-mountain fa-2x my-view"></i></div>
-      <div  class= "genre">風景</div>
+      <div class="box1"><i class="fas fa-search-minus fa-1x my-view"></i></div>
+      <div  class= "genre">インテリア</div>
     </div>
     <div class= "icon icon5">
-      <div class="box1"><i class="fas fa-plane fa-2x my-travel"></i></div>
-      <div  class= "genre">旅行</div>
+      <div class="box1"><i class="fas fa-search-minus fa-1x my-travel"></i></div>
+      <div  class= "genre">スポーツ</div>
     </div>
     <div class= "icon icon6">
-      <div class="box1"><i class="fas fa-utensils fa-2x my-food"></i></div>
-      <div  class= "genre">食べ物</div>
+      <div class="box1"><i class="fas fa-search-minus fa-1x my-food"></i></div>
+      <div  class= "genre">アート</div>
+    </div>
+    <div class= "icon icon7">
+      <div class="box1"><i class="fas fa-search-minus fa-1x my-food"></i></div>
+      <div  class= "genre">その他</div>
     </div>
   </div>
 </div>
@@ -36,6 +38,7 @@
         <%= render partial:"post",locals: { post: post } %>
       <% end %>
       <%= paginate(@posts) %>
+      <p style="height:200px; width:100%;"></p>
     </div>
   </div>
 </div>
