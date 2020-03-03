@@ -68,3 +68,6 @@ gem "font-awesome-rails"
 gem 'kaminari'
 gem 'devise-i18n'
 gem 'devise-i18n-views'
+gem 'jquery-rails'
+gem 'carrierwave'
+gem 'mini_magick'

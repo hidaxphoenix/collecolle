@@ -1,73 +1,49 @@
 .icon-bar{
   display: flex;
-  background-color: #FBF8E9;;
-  height: 60px;
-  position: fixed;
-  top: 70px;
+  background-color: white;
+  height: 190px;
+  top: 60px;
   z-index: 99;
   width: 100%;
+  position: relative;
   
   .icons{
     display: flex;
     margin: 0 auto;
     color: #EA5704;
+    position: absolute;
+    bottom: 0;
+    left: 60px;
+    
     .icon {
       margin: 5px 10px 5px 20px;
-      line-height: 45px;
-      height: 45px;
-      width: 125px;
-      text-align: center;
+      line-height: 35px;
+      height: 35px;
+      width: 155px;
       font-size: 13px;
       background-color: white;
-      border-radius: 7px;
-      position: relative;
+      border-radius: 20px;
       display: flex;
       border: 1px solid #EA5704;
-    }
-    .icon1{
       
-      .my-health{
-        width: 50px;
-        color: red;
-      }
     }
-    .icon2{
-      .my-hobby{
-        width: 50px;
-        color: rgb(25, 55, 226);
-      }
-    }
-    .icon3{
-      .my-pet{
-        width: 50px;
-        color: rgb(214, 116, 3);
-      }
-    }
-    .icon4{
-      .my-view{
-        width: 50px;
-        color: rgb(30, 165, 75);
-      }
-    }
-    .icon5{
-      .my-travel{
-        width: 50px;
-        color: rgb(46, 184, 226);
-      }
-    }
-    .icon6{
-      .my-food{
-        width: 50px;
-        color: rgb(233, 143, 7);
-      }
-    }
+  
+
+
+    
     .box1{
-      margin: 5px;
+      margin-left: 32px;
+      margin-right: 15px;
+      margin-bottom: 5px;
+    }
+    i{
+
     }
     .genre{
       text-align: center;
       font-size: 16px;
       margin-right: 10px;
+      color: #EA5704;
     }
   }
 }
@@ -75,36 +51,31 @@
 .main{
   width: 100%;
   height: auto;
-  background-color: #FBF8E9;;
+  background-color: white;
   margin-top: 120px;
 
   .contents{
-    height: 100%;
+    height: auto;
     width: auto;
     z-index: 10;
     margin: 0 auto;
-    overflow-x: scroll;
+    // overflow-y: scroll;
     .contents-box{
-      width: 100%;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 15px;
-      margin-bottom: 0;
-      max-width: 660px;
-      display: inline-block;
-      white-space: nowrap;
+      width: 1310px;
+      margin: 0 auto;
       .contents_post{
       position: relative;
-      height: 400px;
-      width: 600px;
+      height: 350px;
+      width: 400px;
       color: #fff;
-      background-size: cover;
+      background-repeat: no-repeat;
       background-position: center center;
-      border-radius: 3px;
       box-shadow: 0 0 10px rgba(41, 41, 41, 0.2);
       display:inline-block;
-      margin:15px;
-      // border: 1px solid #EA5704;
+      margin-right: 15px;
+      margin-left: 15px;
+      margin-bottom: 80px;
+      border: 0.5px solid black;
         .more{
           position: absolute;
           cursor: pointer;
@@ -123,7 +94,7 @@
             width: 80px;
             right: 0;
             font-size: 12px;
-            background-color: #FBF8E9;
+            background-color: white;
             border: 1px solid #ddd;
             display: none;
             box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
@@ -144,7 +115,7 @@
                 text-decoration: none;
                 font-size: 15px;
                 &:hover {
-                  background-color: #FBF8E9;
+                  background-color: white;
                   color: #EA5704;
                 }
               }

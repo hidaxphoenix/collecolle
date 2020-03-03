@@ -9,7 +9,7 @@
         <li>
           <%= link_to '編集', "/posts/#{post.id}/edit", method: :get %>
         </li>
-        <li>
+        <li class="delete">
           <%= link_to '削除', "/posts/#{post.id}", method: :delete %>
         </li>
       <% end %>
@@ -25,3 +25,14 @@
     <%= "# #{post.tags&.first&.name}" %>
   </div>
 </div>
+
+
+<button id="btn">ボタン</button>
+ 
+<script>
+  $(function(){
+    $("#submit").click(function(e) {
+    $(this).text("Hello World!");
+  });
+  });
+</script>
