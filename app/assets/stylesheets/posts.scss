@@ -1,29 +1,36 @@
 .icon-bar{
   display: flex;
   background-color: white;
-  height: 60px;
-  position: fixed;
+  height: 190px;
   top: 60px;
   z-index: 99;
   width: 100%;
+  position: relative;
   
   .icons{
     display: flex;
     margin: 0 auto;
     color: #EA5704;
+    position: absolute;
+    bottom: 0;
+    left: 60px;
+    
     .icon {
       margin: 5px 10px 5px 20px;
-      line-height: 45px;
+      line-height: 35px;
       height: 35px;
       width: 155px;
-      text-align: center;
       font-size: 13px;
       background-color: white;
       border-radius: 20px;
-      position: relative;
       display: flex;
       border: 1px solid #EA5704;
+      
     }
+  
+
+
+    
     .box1{
       margin-left: 32px;
       margin-right: 15px;
@@ -63,10 +70,11 @@
       color: #fff;
       background-size: cover;
       background-position: center center;
-      border-radius: 3px;
       box-shadow: 0 0 10px rgba(41, 41, 41, 0.2);
       display:inline-block;
-      margin:15px;
+      margin-right: 15px;
+      margin-left: 15px;
+      margin-bottom: 80px;
       border: 0.5px solid black;
         .more{
           position: absolute;
