@@ -6,6 +6,7 @@ class Post < ApplicationRecord
   has_many :liked_users, through: :likes, source: :user
   has_many :posttags,  dependent: :destroy
   has_many :tags, through: :posttags 
+  mount_uploader :image, ImageUploader
 
   def self.search(search)
     if search
