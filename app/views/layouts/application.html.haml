@@ -2,32 +2,32 @@
 %html
   %head
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
-    %title Hajime
+    %title Collecolle
     = csrf_meta_tags
     = csp_meta_tag
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
     %link{:href => "https://use.fontawesome.com/releases/v5.6.1/css/all.css", :rel => "stylesheet"}/
   %body
-    %header.header
-      .header__bar
-        %h1.header-title
-          %a{:href => "/"} Colecole
-        %p.sub-title ~コレクション シェアアプリ~
-        = form_with(url: posts_searches_path, local: true, method: :get, class: "search-form") do |form|
-          = form.text_field :keyword, placeholder: "投稿を検索する", class: "search-input"
-          = form.submit "検索", class: "search-btn"
-        - if user_signed_in?
-          .user_nav_grid
-            %span
-              = current_user.nickname
-              %ul.user__info
-                %li
-                  = link_to "マイページ", "/users/#{current_user.id}"
-                  = link_to "ログアウト", destroy_user_session_path, method: :delete
-            = link_to "投稿する", "/posts/new", class: "btn btn-post"
-        - else
-          .header-right-box
-            = link_to "ログイン", new_user_session_path, class: "btn-square-shadow"
-            = link_to "新規登録", new_user_registration_path, class: "btn-square-shadow"
+    -# %header.header
+    -#   .header__bar
+    -#     %h1.header-title
+    -#       %a{:href => "/"} Colecole
+    -#     %p.sub-title ~コレクション シェアアプリ~
+    -#     = form_with(url: posts_searches_path, local: true, method: :get, class: "search-form") do |form|
+    -#       = form.text_field :keyword, placeholder: "投稿を検索する", class: "search-input"
+    -#       = form.submit "検索", class: "search-btn"
+    -#     - if user_signed_in?
+    -#       .user_nav_grid
+    -#         %span
+    -#           = current_user.nickname
+    -#           %ul.user__info
+    -#             %li
+    -#               = link_to "マイページ", "/users/#{current_user.id}"
+    -#               = link_to "ログアウト", destroy_user_session_path, method: :delete
+    -#         = link_to "投稿する", "/posts/new", class: "btn btn-post"
+    -#     - else
+    -#       .header-right-box
+    -#         = link_to "ログイン", new_user_session_path, class: "btn-square-shadow"
+    -#         = link_to "新規登録", new_user_registration_path, class: "btn-square-shadow"
     = yield
