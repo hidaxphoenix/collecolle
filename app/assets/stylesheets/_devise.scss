@@ -1,0 +1,108 @@
+// ログイン画面
+h2{
+  margin-top: 110px;
+  margin-left: 390px;
+  letter-spacing: 0.15em;
+  color: #EA5704;
+  font-family: 'FOT-筑紫A丸ゴシック Std B', '游ゴシック Medium', 'Yu Gothic Medium', '游ゴシック体', YuGothic, 'Hiragino Sans', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, sans-serif;
+}
+.contents-row-login{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 660px;
+  color: #EA5704;
+  
+input{
+  width: 600px;
+  height: 50px;
+  margin-bottom: 20px;
+  letter-spacing: 0.15em;
+  border-radius: 8px;
+  font-family: 'FOT-筑紫A丸ゴシック Std B', '游ゴシック Medium', 'Yu Gothic Medium', '游ゴシック体', YuGothic, 'Hiragino Sans', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, sans-serif;
+}
+.login-btn{
+  background-color: #EA5704;
+  color: white;
+}
+}
+.login-memo1{
+  margin-top: 30px;
+  margin-left: 390px;
+  a{
+    text-decoration: none;
+    color:  #EA5704;
+  }
+}
+.login-memo2{
+  margin-left: 390px;
+  a{
+    text-decoration: none;
+    color:  #EA5704;
+  }
+}
+
+
+
+// アカウント新規登録画面
+.contents-row-id-registration{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 660px;
+  color: #EA5704;
+  input{
+    width: 600px;
+    height: 50px;
+    margin-bottom: 20px;
+    letter-spacing: 0.15em;
+    border-radius: 8px;
+    font-family: 'FOT-筑紫A丸ゴシック Std B', '游ゴシック Medium', 'Yu Gothic Medium', '游ゴシック体', YuGothic, 'Hiragino Sans', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, sans-serif;
+  }
+  .login-btn{
+    background-color: #EA5704;
+    color: white;
+  }
+}
+
+// マイページ画面
+.display-box{
+  height: 100%;
+  width: 700px;
+  background-color: rgb(236, 234, 234);
+  border-bottom: 4px solid rgb(145, 140, 140);
+  .display-inbox{
+    height: 140px;
+    width: 700px;
+    border-style: outset;
+    border-style: inset;
+    border-top: 4px solid rgb(145, 140, 140);
+    border-left: 10px solid rgb(145, 140, 140);
+    border-bottom: 20px solid white;
+    border-right: 10px solid rgb(145, 140, 140);
+    background-color: rgb(236, 234, 234);
+    .display-inbox2{
+      .content_post-mypage{
+        width: 120px;
+        height: 130px;
+        margin: 20px 0;
+        padding: 30px;
+        color: #fff;
+        background-size: cover;
+        border-radius: 3px;
+        box-shadow: 0 0 10px rgba(41, 41, 41, 0.2);
+        position: relative;
+        p{
+          position: absolute;
+          bottom: 20px;
+          color: #EA5704;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}

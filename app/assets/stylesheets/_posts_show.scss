@@ -1,0 +1,101 @@
+// 詳細ページ
+div.contents.row-show{
+  margin-top: 60px;
+  width: 100%;
+  height:auto;;
+  .contents-post-box-show{
+    height: 480px;
+    width: 600px;
+    margin: 0 auto;
+    .contents-post-show{
+      height: 400px;
+      width: 600px;
+      color: #fff;
+      background-size: cover;
+      background-position: center center;
+      border-radius: 3px;
+      box-shadow: 0 0 10px rgba(41, 41, 41, 0.2);
+      display:inline-block;
+      position: relative;
+      margin-top: 40px;
+      p{
+        font-family: 'FOT-筑紫A丸ゴシック Std B', '游ゴシック Medium', 'Yu Gothic Medium', '游ゴシック体', YuGothic, 'Hiragino Sans', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, sans-serif;
+        position: absolute;
+        left: 15px;
+        right: 100px;
+        bottom: 15px;
+        margin: 0;
+        font-size: 15px;
+        z-index: 2;
+        font-weight: bold;
+        text-shadow: 0 0 2px #EA5704, 0 0 1px #EA5704, 0 0 1px #EA5704;
+        width: 600px;
+      }
+      .name{
+        position: absolute;
+        right: 15px;
+        bottom: 15px;
+        z-index: 2;
+        font-size: 13px;
+      }
+      a{
+        display: block;
+        color: white;
+        text-shadow: 0 0 2px #EA5704, 0 0 1px #EA5704, 0 0 1px #EA5704;
+        text-decoration: none;
+      }
+      h4{
+        text-shadow: 0 0 2px #EA5704, 0 0 1px #EA5704, 0 0 1px #EA5704;
+        margin-left: 15px;
+        font-size: 15px;
+      }
+    } 
+  }
+  .container{
+    text-align: center;
+    position: relative;
+    textarea{
+      width: 500px;
+      height: 50px;
+      
+    }
+    .show-btn{
+      width:90px;
+      height: 50px;
+      background: #EA5704;/*ボタン色*/
+      color: #FFF;
+      border-radius: 8px;
+    }
+    p{
+      color: #EA5704;
+      text-align: center;
+      font-size: 13px;
+      margin-left: 40px;
+      width: 600px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .comments{
+      color: #EA5704;
+      width: 600px;
+      margin: 0 auto;
+      font-size: 15px;
+      text-align: left;
+    }
+  }
+}
+
+div.contents.row{
+  margin-top: 60px;
+  .content_post{
+    width: 400px;
+    height: 300px;
+    margin: 20px 0;
+    padding: 30px;
+    color: #fff;
+    background-size: 400px 300px;
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgba(41,41,41,0.2);
+    position: relative;
+  }
+}

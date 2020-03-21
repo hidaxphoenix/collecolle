@@ -1,0 +1,11 @@
+.contents.row
+  %p
+    = @nickname
+    さんの投稿一覧
+  .display-box
+    - @posts.each do |post|
+      .display-inbox
+        .display-inbox2
+          .content_post-mypage{:style => "background-image: url(#{post.image});"}
+            = simple_format(post.text)
+    = paginate(@posts)

@@ -1,0 +1,43 @@
+.icon-bar
+  .icons
+    .icon.icon1
+      .box1
+        %i.fas.fa-search-minus.fa-1x.my-health
+      .genre ホビー
+    .icon.icon2
+      .box1
+        %i.fas.fa-search-minus.fa-1x.my-hobby
+      .genre 本　音楽
+    .icon.icon3
+      .box1
+        %i.fas.fa-search-minus.fa-1x.my-pet
+      .genre アパレル
+    .icon.icon4
+      .box1
+        %i.fas.fa-search-minus.fa-1x.my-view
+      .genre インテリア
+    .icon.icon5
+      .box1
+        %i.fas.fa-search-minus.fa-1x.my-travel
+      .genre スポーツ
+    .icon.icon6
+      .box1
+        %i.fas.fa-search-minus.fa-1x.my-food
+      .genre アート
+    .icon.icon7
+      .box1
+        %i.fas.fa-search-minus.fa-1x.my-food
+      .genre その他
+.main
+  .contents
+    .contents-box
+      - @posts.each do |post|
+        = render partial:"post",locals: { post: post }
+      = paginate(@posts)
+      %p{:style => "height:200px; width:100%;"}
+.howtouse-hajime
+%footer
+  %p
+    Copyright HAJIME 2020.
+:javascript
+
