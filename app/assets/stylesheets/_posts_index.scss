@@ -179,22 +179,42 @@ body{
         display: flex;
         height: 60px;
         width: 100%;
-        text-align: 60px;
+        line-height: 60px;
+        position: relative;
         &__title{
           font-size: 40px;
-
+          margin-left: 20px;
         }
         &__mypage{
           font-size: 18px;
+          margin-left: 50px;
         }
-        &__post{
+        &__devise{
           font-size: 18px;
-        }
-        &__login{
-          font-size: 18px;
-        }
-        &__logout{
-          font-size: 18px;
+          position: absolute;
+          right:20px;
+          .user-nav{
+            .post-new{
+              text-decoration: none;
+              color: white;
+              margin-right: 30px;
+            }
+            .logout{
+              text-decoration: none;
+              color: white;
+            }
+          }
+          .login-nav{
+            .sign-up{
+              text-decoration: none;
+              color: white;
+              margin-right: 30px;
+            }
+            .login{
+              text-decoration: none;
+              color: white;
+            }
+          }
         }
       }
     }
@@ -206,7 +226,7 @@ body{
         background-color: #ff8228;
         width: 500px;
         height: 500px;
-        margin: 0 auto;
+        margin: 80px auto 0;
         .fas{
           font-size: 80px;
           margin-top: 30px;
@@ -270,8 +290,8 @@ body{
           background-color: white;
           border: 1px solid #ddd;
           display: none;
-          box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
           border-radius: 3px;
+          box-shadow: 0 0 10px rgba(41, 41, 41, 0.2);
         
           li {
             border-bottom: 1px solid #ddd;
@@ -284,12 +304,12 @@ body{
             a {
               display: block;
               padding: 5px;
-              color: #EA5704;
+              color: #ff8228;
               text-decoration: none;
               font-size: 15px;
               &:hover {
                 background-color: white;
-                color: #EA5704;
+                color: #ff8228;
               }
             }
           }

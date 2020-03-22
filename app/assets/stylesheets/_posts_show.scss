@@ -1,8 +1,6 @@
 // 詳細ページ
-div.contents.row-show{
-  margin-top: 60px;
-  width: 100%;
-  height:auto;;
+.contents-box-show{
+  width: 700px;
   .contents-post-box-show{
     height: 480px;
     width: 600px;
@@ -28,7 +26,7 @@ div.contents.row-show{
         font-size: 15px;
         z-index: 2;
         font-weight: bold;
-        text-shadow: 0 0 2px #EA5704, 0 0 1px #EA5704, 0 0 1px #EA5704;
+        color: #ff8228;
         width: 600px;
       }
       .name{
@@ -40,34 +38,39 @@ div.contents.row-show{
       }
       a{
         display: block;
-        color: white;
-        text-shadow: 0 0 2px #EA5704, 0 0 1px #EA5704, 0 0 1px #EA5704;
+        color: #ff8228;
         text-decoration: none;
       }
       h4{
-        text-shadow: 0 0 2px #EA5704, 0 0 1px #EA5704, 0 0 1px #EA5704;
+        color: #ff8228;
         margin-left: 15px;
         font-size: 15px;
       }
     } 
   }
   .container{
-    text-align: center;
+    // text-align: center;
     position: relative;
     textarea{
       width: 500px;
-      height: 50px;
-      
+      height: 70px;
+      margin-left: 50px;
     }
     .show-btn{
       width:90px;
       height: 50px;
-      background: #EA5704;/*ボタン色*/
+      background: #ff8228;/*ボタン色*/
       color: #FFF;
       border-radius: 8px;
+      position: absolute;
+      bottom: 40px;
+      margin-left: 10px;
+      // line-height: 100px;
+      // margin-left: 5px;
+      // margin-bottom: 50px;
     }
     p{
-      color: #EA5704;
+      color: #ff8228;
       text-align: center;
       font-size: 13px;
       margin-left: 40px;
@@ -76,7 +79,7 @@ div.contents.row-show{
       text-align: center;
     }
     .comments{
-      color: #EA5704;
+      color: #ff8228;
       width: 600px;
       margin: 0 auto;
       font-size: 15px;

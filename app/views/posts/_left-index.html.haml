@@ -1,0 +1,30 @@
+.split-left__inner
+  %header.header
+    .header__nav
+      .header__nav__title Collecolle
+      .header__nav__mypage マイページ
+      .header__nav__devise
+        - if user_signed_in?
+          .user-nav
+            = link_to  "投稿する", "/posts/new", class: "post-new"
+            = link_to "ログアウト", destroy_user_session_path, method: :delete, class:"logout"
+        - else
+          .login-nav
+            = link_to "新規登録", new_user_registration_path, class: 'sign-up'
+            = link_to "ログイン", new_user_session_path, class: 'login'
+      -# .header__nav__login ログイン
+      -# .header__nav__logout ログアウト
+  .main-icons
+    .icon-box
+      %i.fas.fa-robot
+      %i.fas.fa-book
+      %i.fas.fa-music
+      %i.fas.fa-tshirt
+      %i.fas.fa-couch
+      %i.fas.fa-running
+      %i.fas.fa-tv
+      %i.fas.fa-palette
+      %i.fas.fa-feather-alt
+  %footer.footer
+    %p
+      Copyright Collecolle 2020.
