@@ -1,15 +1,20 @@
 // 投稿画面
 
-h3 {
-  margin-top: 50px;
-  text-align: center;
-  letter-spacing: 0.15em;
-  color: #EA5704;
-  font-family: 'FOT-筑紫A丸ゴシック Std B', '游ゴシック Medium', 'Yu Gothic Medium', '游ゴシック体', YuGothic, 'Hiragino Sans', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, sans-serif;
-}
 .form {
+  margin: 0 auto;
+  width: 500px;
+  h3 {
+    font-size: 25px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    letter-spacing: 0.15em;
+    color: #ff8228;
+    font-family: 'FOT-筑紫A丸ゴシック Std B', '游ゴシック Medium', 'Yu Gothic Medium', '游ゴシック体', YuGothic, 'Hiragino Sans', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, sans-serif;
+  }
   select{
     height: 35px;
+    width: 200px;
     margin-bottom: 15px;
     margin-top: 10px;
   }
@@ -21,14 +26,17 @@ h3 {
     border-radius: 5px;
     font-family: "游ゴシック", "YuGothic";
   }
-  input[type="submit"] {
-    background-color: #EA5704;
+  .submit-btn {
+    text-align: center;
+    width: 300px;
+    margin-left: 110px;
+    background-color: #ff8228;
     border-radius: 20px;
     color: #fff;
     border: 0;
     font-size: 18px;
     &:hover {
-      background-color: #EA5704;
+      background-color: #ff8228;
     }
   }
 }

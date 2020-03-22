@@ -1,6 +1,11 @@
-.contents.row
-  .form
-    = form_with(model: @post, local: true) do |form|
-      %h3
-        投稿する
-      = render partial: "form", locals: {form: form}
+.split
+  .split-item.split-left
+    = render "posts/left-index"
+  .split-item.split-right
+    .split-right__inner
+      .contents.row
+        .form
+          = form_with(model: @post, local: true) do |form|
+            %h3
+              投稿する
+            = render partial: "form", locals: {form: form}

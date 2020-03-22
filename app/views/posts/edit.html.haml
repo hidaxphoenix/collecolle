@@ -1,9 +1,14 @@
-.contents.row
-  .container
-    = form_with(model: @post, local: true) do |form|
-      %h3
-        編集する
-      = form.collection_select :tag_ids, Tag.all, :id, :name
-      = form.text_field :image, placeholder: "画像Urlを貼り付けてください"
-      = form.text_area :text, placeholder: "文章" ,rows: "10"
-      = form.submit "編集完了"
+.split
+  .split-item.split-left
+    = render "posts/left-index"
+  .split-item.split-right
+    .split-right__inner
+      .contents.row
+        .form
+          = form_with(model: @post, local: true) do |form|
+            %h3
+              編集する
+            = form.collection_select :tag_ids, Tag.all, :id, :name
+            = form.file_field :image, placeholder: "画像Urlを貼り付けてください"
+            = form.text_area :text, placeholder: "文章" ,rows: "10"
+            = form.submit "編集完了", class:"submit-btn"

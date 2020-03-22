@@ -1,5 +1,10 @@
-.contents.row
-  .success
-    %h3
-      削除が完了しました。
-    %a.btn{:href => "/"} 投稿一覧へ戻る
+.split
+  .split-item.split-left
+    = render "posts/left-index"
+  .split-item.split-right
+    .split-right__inner
+      .contents.row
+        .success
+          %h3
+            削除が完了しました。
+          %a.destroy-btn{:href => "/"} 投稿一覧へ戻る
