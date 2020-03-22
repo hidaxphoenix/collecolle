@@ -188,6 +188,10 @@ body{
         &__mypage{
           font-size: 18px;
           margin-left: 50px;
+          .user-mypage{
+            text-decoration: none;
+            color: white;
+          }
         }
         &__devise{
           font-size: 18px;

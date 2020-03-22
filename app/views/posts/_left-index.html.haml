@@ -2,7 +2,9 @@
   %header.header
     .header__nav
       .header__nav__title Collecolle
-      .header__nav__mypage マイページ
+      - if user_signed_in?
+        .header__nav__mypage
+          = link_to "マイページ", "/users/#{current_user.id}", class: "user-mypage"
       .header__nav__devise
         - if user_signed_in?
           .user-nav
