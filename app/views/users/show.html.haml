@@ -4,13 +4,14 @@
   .split-item.split-right
     .split-right__inner
       .contents.row
-        %p
+        %p.user-post
           = @nickname
-          さんの投稿一覧
+          さんのコレクション一覧
         .display-box
           - @posts.each do |post|
             .display-inbox
+              .content_post-mypage{:style => "background-image: url(#{post.image});"}
+                = simple_format(post.text)
               .display-inbox2
-                .content_post-mypage{:style => "background-image: url(#{post.image});"}
-                  = simple_format(post.text)
+                
           -# = paginate(@posts)

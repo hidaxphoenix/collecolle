@@ -86,18 +86,24 @@ h2{
 }
 
 
-
-
-
 // マイページ画面
+.user-post{
+  font-size: 25px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+  letter-spacing: 0.15em;
+  color: #ff8228;
+  font-family: 'FOT-筑紫A丸ゴシック Std B', '游ゴシック Medium', 'Yu Gothic Medium', '游ゴシック体', YuGothic, 'Hiragino Sans', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, sans-serif;
+}
 .display-box{
   height: 100%;
-  width: 700px;
+  width: 600px;
+  margin: 0 auto;
   background-color: rgb(236, 234, 234);
   border-bottom: 4px solid rgb(145, 140, 140);
   .display-inbox{
     height: 140px;
-    width: 700px;
     border-style: outset;
     border-style: inset;
     border-top: 4px solid rgb(145, 140, 140);
@@ -105,24 +111,25 @@ h2{
     border-bottom: 20px solid white;
     border-right: 10px solid rgb(145, 140, 140);
     background-color: rgb(236, 234, 234);
-    .display-inbox2{
-      .content_post-mypage{
-        width: 120px;
-        height: 130px;
-        margin: 20px 0;
-        padding: 30px;
-        color: #fff;
-        background-size: cover;
-        border-radius: 3px;
-        box-shadow: 0 0 10px rgba(41, 41, 41, 0.2);
-        position: relative;
-        p{
-          position: absolute;
-          bottom: 20px;
-          color: #EA5704;
-          font-size: 15px;
-        }
+    .content_post-mypage{
+      position: relative;
+      height: 130px;
+      width: 130px;
+      color: #fff;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      display: inline-block;
+      margin: 20px 0;
+      p{
+        position: absolute;
+        bottom: 20px;
+        color: #EA5704;
+        font-size: 15px;
       }
+    }
+    .display-inbox2{
+      
     }
   }
 }
