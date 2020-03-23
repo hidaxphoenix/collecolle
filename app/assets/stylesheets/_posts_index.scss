@@ -188,6 +188,10 @@ body{
         &__mypage{
           font-size: 18px;
           margin-left: 50px;
+          .user-mypage{
+            text-decoration: none;
+            color: white;
+          }
         }
         &__devise{
           font-size: 18px;
@@ -267,8 +271,7 @@ body{
       background-repeat: no-repeat;
       background-position: center center;
       display:inline-block;
-      margin: 15px;
-
+      margin: 30px 0 0 35px;
       .more{
         position: absolute;
         cursor: pointer;
