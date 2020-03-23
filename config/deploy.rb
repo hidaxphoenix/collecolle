@@ -3,10 +3,10 @@
 lock '3.12.1'
 
 # Capistranoのログの表示に利用する
-set :application, 'freemarket_sample_70c'
+set :application, 'collecolle'
 
 # どのリポジトリからアプリをpullするかを指定する
-set :repo_url,  'git@github.com:hidaxphoenix/freemarket_sample_70c.git'
+set :repo_url,  'git@github.com:hidaxphoenix/collecolle.git'
 
 # バージョンが変わっても共通で参照するディレクトリを指定
 set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system', 'public/uploads')
