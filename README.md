@@ -1,18 +1,19 @@
 # README
 
-#Application name
-##Collecolle
+# Application name
+### Collecolle
 
-#Discription
-##webでコレクションを自慢＆管理できる
+# Discription
+### webでコレクションを自慢＆管理できる
 
-#Usage
-##加えたいコレクションの写真を投稿→投稿した写真がコレクションとしてマイページに溜まっていく。
+# Usage
+### 加えたいコレクションの写真を投稿→投稿した写真がコレクションとしてマイページに溜まっていく。
 
-#構築やインストール方法
+# 構築やインストール方法
+###追って記述
 
-#ライセンス
-##hidaxphoenix
+# ライセンス
+### 追って記述
 
 
 
