@@ -29,7 +29,7 @@ before_action :move_to_index, except: [:index, :show, :search]
 
   def show
     @comment = Comment.new
-    @commnets = @post.comments.includes(:user)
+    @comments = @post.comments.includes(:user)
     @like = Like.new
   end
 
