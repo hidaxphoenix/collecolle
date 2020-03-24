@@ -1,7 +1,9 @@
 .split-left__inner
   %header.header
     .header__nav
-      .header__nav__title Collecolle
+      .header__nav__title
+        = link_to root_path, class:"main-title" do
+          Collecolle
       - if user_signed_in?
         .header__nav__mypage
           = link_to "マイページ", "/users/#{current_user.id}", class: "user-mypage"
