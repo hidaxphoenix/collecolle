@@ -3,7 +3,7 @@
     = render "posts/left-index"
   .split-item.split-right
     .split-right__inner
-      .contents.row
+      .contents-box
         - @posts.each do |post|
           = render partial: "posts/post", locals: { post: post }
 
