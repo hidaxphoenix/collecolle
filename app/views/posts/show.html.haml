@@ -6,27 +6,27 @@
       .contents-box-show
         .contents-post-box-show
           .contents-post-show{:style => "background-image: url(#{@post.image});"}
-            - if user_signed_in? && current_user.id == @post_user_id
-              .more
-                %span= image_tag'arrow_top2.png'
-                %ul.more_list
+            .more
+              %span.arrow= image_tag 'arrow_top2.png'
+              %ul.more_list
+                - if user_signed_in? && current_user.id == @post.user_id
                   %li
                     = link_to '編集', "/posts/#{@post.id}/edit", method: :get
-                  %li
+                  %li.delete
                     = link_to '削除', "/posts/#{@post.id}", method: :delete
-              - if current_user.already_liked?(@post)
-                = button_to 'いいねを取り消す', post_like_path(@post), method: :delete
-              - else
-                = button_to 'いいね', post_likes_path(@post)
             = simple_format(@post.text)
             %span.name
-              %a{:href => "/users/#{@post.user.id}"}
+              %a{:href => "/users/#{@post.user_id}"}
                 %span 投稿者
                 = @post.user.nickname
-            %h4
-              いいね件数: #{@post.likes.count}
+            -# %h4
+            -#   いいね件数: #{@post.likes.count}
 
+              -# %div{:id => "likes_buttons_#{post.id}"}
+              -#   = render partial: 'likes/like', locals: { post: post, likes: @likes}
 
+        .likes-btn{:id => "likes_buttons_#{@post.id}"}
+          = render partial: 'likes/like', locals: { post: @post, likes: @likes}
         .container
           - if current_user
             = form_with(model: [@post, @comment], local: true) do |form|

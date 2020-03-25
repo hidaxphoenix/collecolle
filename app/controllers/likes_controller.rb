@@ -2,14 +2,16 @@ class LikesController < ApplicationController
   before_action :set_post
   
   def create
-    @like = current_user.likes.create(post_id: params[:post_id])
-    redirect_back(fallback_location: root_path)
+    @like = Like.create(user_id: current_user.id, post_id: params[:post_id])
+    @likes = Like.where(post_id: params[:post_id])
+    @post.reload
   end
 
   def destory
-    @like = Like.find_by(post_id: params[:post_id], user_id: current_user.id)
-    @like.destory
-    redirect_back(fallback_location: root_path)
+    like = Like.find_by(user_id: current_user.id, post_id: params[:post_id])
+    like.destroy
+    @likes = Like.where(post_id: params[:post_id])
+    @post.reload
   end
 
   private

@@ -16,6 +16,12 @@
       display:inline-block;
       position: relative;
       margin-top: 40px;
+      .more{
+        text-align: right;
+        .arrow{
+
+        }
+      }
       p{
         font-family: 'FOT-筑紫A丸ゴシック Std B', '游ゴシック Medium', 'Yu Gothic Medium', '游ゴシック体', YuGothic, 'Hiragino Sans', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, sans-serif;
         position: absolute;
@@ -47,6 +53,21 @@
         font-size: 15px;
       }
     } 
+  }
+  .likes-btn{
+    margin-left: 50px;
+    a{
+      text-decoration: none;
+      color: #ff8228;
+      .vertical_like{
+        i{
+          .red-text{
+
+          }
+        }
+      }
+    }
+
   }
   .container{
     position: relative;
