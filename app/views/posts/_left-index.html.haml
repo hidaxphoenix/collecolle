@@ -16,8 +16,6 @@
           .login-nav
             = link_to "新規登録", new_user_registration_path, class: 'sign-up'
             = link_to "ログイン", new_user_session_path, class: 'login'
-      -# .header__nav__login ログイン
-      -# .header__nav__logout ログアウト
   .main-icons
     .icon-box
       %i.fas.fa-robot
@@ -29,6 +27,9 @@
       %i.fas.fa-tv
       %i.fas.fa-palette
       %i.fas.fa-feather-alt
+  = form_with(url: posts_searches_path, local: true, method: :get, class: "search-form") do |form|
+    = form.text_field :keyword, placeholder: "投稿を検索する", class: "search-input"
+    = form.submit "検索", class: "search-btn"
   %footer.footer
     %p
       Copyright Collecolle 2020.
