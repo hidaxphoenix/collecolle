@@ -1,8 +1,8 @@
 # README
 
 ## アプリ名　(Application name)
-Collecolle
-
+### Collecolle
+ 
 ![トップ画面](https://i.gyazo.com/cd7d99842a932eae24356d6e288ef9a2.jpg)
 
 ![コレクション詳細](https://i.gyazo.com/e18730ff55dc8ca8dc928bd0566514da.jpg)
