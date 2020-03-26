@@ -27,6 +27,8 @@
 
         .likes-btn{:id => "likes_buttons_#{@post.id}"}
           = render partial: 'likes/like', locals: { post: @post, likes: @likes}
+
+          
         .container
           - if current_user
             = form_with(model: [@post, @comment], local: true) do |form|
