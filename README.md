@@ -1,22 +1,38 @@
 # README
 
-## Application name
+## アプリ名　(Application name)
 Collecolle
 
-## Discription
-webでコレクションを自慢＆管理できる
-
-## Usage
-加えたいコレクションの写真を投稿→投稿した写真がコレクションとしてマイページに溜まっていく。
-
-## 構築やインストール方法
-追って記述
-
-## ライセンス
-追って記述
+![Top View](https://gyazo.com/cd7d99842a932eae24356d6e288ef9a2)
 
 
+## 概要 (Discription)
+①web上でコレクションをシェア＆管理ができる。<br>
+②PC操作が苦手なシニア層をターゲットにしたSNSの入門アプリ。
 
+## 使い方 (Usage)
+加えたいコレクションの写真を投稿 → 投稿した写真がコレクションとしてマイページに溜まっていく。
+
+## 本番環境URL (Application URL)
+http://18.178.147.81:5000/
+
+## 制作背景 (Why I make this)
+目的：定年退職した父と同様のシニア世代の方に、SNSの楽しさを伝えたく作成しています。
+<br><br>
+理由：私の父や、父と同世代のシニア層の多くに「SNSをやってみたいが、複雑すぎてよく分からない」という声が多く、SNSの入門的な位置付けのアプリを作成しようと思いました。
+<br><br>
+意図：前職で「モノ」を収集されている方がシニア層に多くいるのを知り、SNSをはじめるキッカケに「コレクション」をコンセプトに置きました。
+
+## 工夫したポイント
+いいね機能, タグ機能, タグ検索機能 の実装
+
+## 使用技術(開発環境)
+Ruby, Ruby on Rails, Haml, SCSS, Javascript, Jquery, Mysql, Github
+
+## 課題や今後実装したい機能
+My Shelf（コレクション棚）機能, 機能説明ページ の実装
+
+## DB設計
 ## userテーブル
 |Column|Type|Options|
 |------|----|-------|
@@ -48,25 +64,4 @@ webでコレクションを自慢＆管理できる
 - belongs_to :user
 - belongs_to :post
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
