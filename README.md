@@ -3,8 +3,11 @@
 ## アプリ名　(Application name)
 Collecolle
 
-![Top View](https://gyazo.com/cd7d99842a932eae24356d6e288ef9a2)
+![トップ画面](https://i.gyazo.com/cd7d99842a932eae24356d6e288ef9a2.jpg)
 
+![コレクション詳細](https://i.gyazo.com/e18730ff55dc8ca8dc928bd0566514da.jpg)
+
+![マイページ](https://i.gyazo.com/64202ac9c4569293f1f9a5b3ea0c2d57.png)
 
 ## 概要 (Discription)
 ①web上でコレクションをシェア＆管理ができる。<br>
