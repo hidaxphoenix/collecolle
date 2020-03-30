@@ -1,6 +1,7 @@
 class PostsController < ApplicationController
 before_action :set_post, only: [:edit, :show]
 before_action :move_to_index, except: [:index, :show, :search]
+before_action :getting_tag 
 
   def index
     @posts = Post.includes(:user).order("created_at DESC").page(params[:page]).per(12)
@@ -37,6 +38,11 @@ before_action :move_to_index, except: [:index, :show, :search]
     @posts = Post.search(params[:keyword])
   end
 
+  def tagsearch
+    # binding.pry
+    @tag = Tag.find(params[:id])
+  end
+
   private
   def post_params
     params.require(:post).permit(:image, :text, :tag_ids).merge(user_id: current_user.id)
@@ -48,5 +54,9 @@ before_action :move_to_index, except: [:index, :show, :search]
 
   def move_to_index
     redirect_to action: :index unless user_signed_in?
+  end
+
+  def getting_tag
+    @tags = Tag.all 
   end
 end

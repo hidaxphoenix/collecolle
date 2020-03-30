@@ -18,15 +18,24 @@
             = link_to "ログイン", new_user_session_path, class: 'login'
   .main-icons
     .icon-box
-      %i.fas.fa-robot
-      %i.fas.fa-book
-      %i.fas.fa-music
-      %i.fas.fa-tshirt
-      %i.fas.fa-couch
-      %i.fas.fa-running
-      %i.fas.fa-tv
-      %i.fas.fa-palette
-      %i.fas.fa-feather-alt
+      = link_to tagsearch_post_path(@tags[0].id) do
+        %i.fas.fa-robot
+      = link_to tagsearch_post_path(@tags[1].id) do
+        %i.fas.fa-book
+      = link_to tagsearch_post_path(@tags[2].id) do
+        %i.fas.fa-music
+      = link_to tagsearch_post_path(@tags[3].id) do
+        %i.fas.fa-tshirt
+      = link_to tagsearch_post_path(@tags[4].id) do
+        %i.fas.fa-couch
+      = link_to tagsearch_post_path(@tags[5].id) do
+        %i.fas.fa-running
+      = link_to tagsearch_post_path(@tags[6].id) do
+        %i.fas.fa-tv
+      = link_to tagsearch_post_path(@tags[7].id) do
+        %i.fas.fa-palette
+      = link_to tagsearch_post_path(@tags[8].id) do
+        %i.fas.fa-feather-alt
   = form_with(url: posts_searches_path, local: true, method: :get, class: "search-form") do |form|
     = form.text_field :keyword, placeholder: "投稿を検索する", class: "search-input"
     = form.submit "検索", class: "search-btn"

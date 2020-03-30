@@ -128,12 +128,17 @@ body{
         width: 500px;
         height: 500px;
         margin: 80px auto 0;
-        .fas{
-          font-size: 80px;
-          margin-top: 30px;
-          margin-left: 50px;
-          margin-bottom: 30px;
-          margin-right: 10px;         
+        a{
+          text-decoration: none;
+          width:10px;
+          .fas{
+            font-size: 80px;
+            margin-top: 30px;
+            margin-left: 50px;
+            margin-bottom: 30px;
+            margin-right: 10px; 
+            color: #fff;       
+          }
         }
       }
     }
