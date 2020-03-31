@@ -39,7 +39,6 @@ before_action :getting_tag
   end
 
   def tagsearch
-    # binding.pry
     @tag = Tag.find(params[:id])
   end
 
