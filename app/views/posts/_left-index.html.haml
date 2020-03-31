@@ -20,24 +20,40 @@
     .icon-box
       = link_to tagsearch_post_path(@tags[0].id) do
         %i.fas.fa-robot
-          %p.icontext
+          %p.icontext-1
             ホビー
       = link_to tagsearch_post_path(@tags[1].id) do
         %i.fas.fa-book
+          %p.icontext-2
+            本
       = link_to tagsearch_post_path(@tags[2].id) do
         %i.fas.fa-music
+          %p.icontext-3
+            音楽
       = link_to tagsearch_post_path(@tags[3].id) do
         %i.fas.fa-tshirt
+          %p.icontext-4
+            アパレル
       = link_to tagsearch_post_path(@tags[4].id) do
         %i.fas.fa-couch
+          %p.icontext-5
+            インテリア
       = link_to tagsearch_post_path(@tags[5].id) do
         %i.fas.fa-running
+          %p.icontext-6
+            スポーツ
       = link_to tagsearch_post_path(@tags[6].id) do
         %i.fas.fa-tv
+          %p.icontext-7
+            電化製品
       = link_to tagsearch_post_path(@tags[7].id) do
         %i.fas.fa-palette
+          %p.icontext-8
+            アート
       = link_to tagsearch_post_path(@tags[8].id) do
         %i.fas.fa-feather-alt
+          %p.icontext-9
+            その他
   = form_with(url: posts_searches_path, local: true, method: :get, class: "search-form") do |form|
     = form.text_field :keyword, placeholder: "投稿を検索する", class: "search-input"
     = form.submit "検索", class: "search-btn"
