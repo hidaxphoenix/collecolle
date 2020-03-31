@@ -2,74 +2,74 @@ $(function() {
   // 「#language-wrapper」にhoverしたときのhoverイベントを作成してください
   $('.fas.fa-robot').hover(
     function(){
-      $('.icontext').fadeIn();
+      $('.icontext-1').fadeIn();
 	      },
 	    function() {
-	      $('.icontext').fadeOut();
+	      $('.icontext-1').fadeOut();
 	    }
   );
   $('.fas.fa-book').hover(
     function(){
-      $('.icontext').fadeIn();
+      $('.icontext-2').fadeIn();
 	      },
 	    function() {
-	      $('.icontext').fadeOut();
+	      $('.icontext-2').fadeOut();
 	    }
   );
   $('.fas.fa-music').hover(
     function(){
-      $('.icontext').fadeIn();
+      $('.icontext-3').fadeIn();
 	      },
 	    function() {
-	      $('.icontext').fadeOut();
+	      $('.icontext-3').fadeOut();
 	    }
   );
   $('.fas.fa-tshirt').hover(
     function(){
-      $('.icontext').fadeIn();
+      $('.icontext-4').fadeIn();
 	      },
 	    function() {
-	      $('.icontext').fadeOut();
+	      $('.icontext-4').fadeOut();
 	    }
   );
   $('.fas.fa-couch').hover(
     function(){
-      $('.icontext').fadeIn();
+      $('.icontext-5').fadeIn();
 	      },
 	    function() {
-	      $('.icontext').fadeOut();
+	      $('.icontext-5').fadeOut();
 	    }
   );
   $('.fas.fa-running').hover(
     function(){
-      $('.icontext').fadeIn();
+      $('.icontext-6').fadeIn();
 	      },
 	    function() {
-	      $('.icontext').fadeOut();
+	      $('.icontext-6').fadeOut();
 	    }
   );
   $('.fas.fa-tv').hover(
     function(){
-      $('.icontext').fadeIn();
+      $('.icontext-7').fadeIn();
 	      },
 	    function() {
-	      $('.icontext').fadeOut();
+	      $('.icontext-7').fadeOut();
 	    }
   );
   $('.fas.fa-palette').hover(
     function(){
-      $('.icontext').fadeIn();
+      $('.icontext-8').fadeIn();
 	      },
 	    function() {
-	      $('.icontext').fadeOut();
+	      $('.icontext-8').fadeOut();
 	    }
   );
   $('.fas.fa-feather-alt').hover(
     function(){
-      $('.icontext').fadeIn();
+      $('.icontext-9').fadeIn();
 	      },
 	    function() {
-	      $('.icontext').fadeOut();
+	      $('.icontext-9').fadeOut();
 	    }
 	);
 });
