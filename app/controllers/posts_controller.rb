@@ -1,7 +1,7 @@
 class PostsController < ApplicationController
 before_action :set_post, only: [:edit, :show]
 before_action :move_to_index, except: [:index, :show, :search]
-before_action :getting_tag, except: [:search]
+before_action :getting_tag
 
   def index
     @posts = Post.includes(:user).order("created_at DESC").page(params[:page]).per(12)
@@ -34,9 +34,9 @@ before_action :getting_tag, except: [:search]
     @like = Like.new
   end
 
-  def search
-    @posts = Post.search(params[:keyword])
-  end
+  # def search
+  #   @posts = Post.search(params[:keyword])
+  # end
 
   def tagsearch
     @tag = Tag.find(params[:id])
