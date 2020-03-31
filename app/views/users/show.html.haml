@@ -8,10 +8,11 @@
           = @nickname
           さんのコレクション一覧
         .display-box
-          - @posts.each do |post|
-            .display-inbox
+          .display-inbox1
+            - @posts.each do |post|
               .content_post-mypage{:style => "background-image: url(#{post.image});"}
-                = simple_format(post.text)
-              .display-inbox2
-                
-          -# = paginate(@posts)
+          .display-inbox2
+          .display-inbox2
+          .display-inbox2 
+        = paginate(@posts)
+
