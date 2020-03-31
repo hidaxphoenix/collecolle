@@ -24,20 +24,36 @@
             ホビー
       = link_to tagsearch_post_path(@tags[1].id) do
         %i.fas.fa-book
+          %p.icontext
+            本
       = link_to tagsearch_post_path(@tags[2].id) do
         %i.fas.fa-music
+          %p.icontext
+            音楽
       = link_to tagsearch_post_path(@tags[3].id) do
         %i.fas.fa-tshirt
+          %p.icontext
+            アパレル
       = link_to tagsearch_post_path(@tags[4].id) do
         %i.fas.fa-couch
+          %p.icontext
+            インテリア
       = link_to tagsearch_post_path(@tags[5].id) do
         %i.fas.fa-running
+          %p.icontext
+            スポーツ
       = link_to tagsearch_post_path(@tags[6].id) do
         %i.fas.fa-tv
+          %p.icontext
+            電化製品
       = link_to tagsearch_post_path(@tags[7].id) do
         %i.fas.fa-palette
+          %p.icontext
+            アート
       = link_to tagsearch_post_path(@tags[8].id) do
         %i.fas.fa-feather-alt
+          %p.icontext
+            その他
   = form_with(url: posts_searches_path, local: true, method: :get, class: "search-form") do |form|
     = form.text_field :keyword, placeholder: "投稿を検索する", class: "search-input"
     = form.submit "検索", class: "search-btn"
