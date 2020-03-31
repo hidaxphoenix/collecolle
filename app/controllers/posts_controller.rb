@@ -1,7 +1,7 @@
 class PostsController < ApplicationController
 before_action :set_post, only: [:edit, :show]
 before_action :move_to_index, except: [:index, :show, :search]
-before_action :getting_tag 
+before_action :getting_tag, except: [:search]
 
   def index
     @posts = Post.includes(:user).order("created_at DESC").page(params[:page]).per(12)
