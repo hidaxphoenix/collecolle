@@ -220,15 +220,26 @@ body{
   .search-form{
     text-align: center;
     padding-top: 100px;
+    position: relative;
     .search-input{
       height: 40px;
       width: 390px;
       padding-left: 10px;
+      border-radius: 5px;
+      position: absolute;
+      left: 120px;
     }
     .search-btn{
-      height: 43px;
+      height: 44px;
       width: 60px;
-      border: solid 0.2px white;
+      border: solid 0.5px rgb(209, 208, 208);
+      border-radius: 5px;
+      position: absolute;
+      right: 130px;
+      i{
+        font-size: 20px;
+        color: rgb(117, 117, 117)
+      }
     }
   }
   // ここからフッター
