@@ -1,0 +1,23 @@
+@media (max-width: 670px) {
+  .split{
+  }
+  .split-item{
+    display: block;
+    width: 100%;
+  }
+  .split-left{
+    position: static;
+    .split-left__inner{
+      width: 100%;
+      height: 20%;
+      position: static;
+      .main-icons{
+        width: 100%;
+        height: 200px;
+        .icon-box{
+          margin: 0;
+        }
+      }
+    }
+  }
+}
