@@ -16,6 +16,19 @@
         height: 200px;
         .icon-box{
           margin: 0;
+          width: 100%;
+          a{
+            .fas{
+              font-size: 60px;
+              margin-right: 0;
+            }
+            .fas.fa-robot{
+              margin-left: 70px;
+            }
+            .fas.fa-running{
+              margin-left: 140px;
+            }
+          }
         }
       }
     }
