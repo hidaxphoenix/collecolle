@@ -3,7 +3,7 @@
   }
   .split-item{
     display: block;
-    width: 100%;
+    width: 100vw;
   }
   // 左側
   .split-left{
@@ -22,13 +22,13 @@
           height: 100px;
           a{
             .fas{
-              font-size: 40px;
+              font-size: 30px;
               margin-right: 0;
-              margin-left: 25px;
-              margin-bottom: 10px;
+              margin-left: 13px;
+              margin-bottom: 0px;
             }
             .fas.fa-robot{
-              margin-left: 35px;
+              margin-left: 13px;
             }
             .fas.fa-running{
               // margin-left: 140px;
@@ -38,8 +38,12 @@
       }
       .search-form{
         padding-top: 10px;
+        .search-input{
+          width: 280px;
+          left: 50px;
+        }
         .search-btn{
-          right: 110px;
+          right: 50px;
         }
       }
       .footer{
@@ -51,8 +55,9 @@
   // 右側
   .split-right__inner{
     .contents-box{
+      width: 100vw;
       .contents_post{
-        margin-left:30px;
+        margin-left:26px;
       }
     }
   }
