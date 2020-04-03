@@ -96,13 +96,13 @@ h2{
   color: #ff8228;
   font-family: 'FOT-筑紫A丸ゴシック Std B', '游ゴシック Medium', 'Yu Gothic Medium', '游ゴシック体', YuGothic, 'Hiragino Sans', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, sans-serif;
 }
-.display-box{
+#box1{
   height: 100%;
   width: 600px;
   margin: 0 auto;
   background-color: rgb(236, 234, 234);
   border-bottom: 4px solid rgb(145, 140, 140);
-  .display-inbox1{
+  #inbox1{
     height: 140px;
     border-style: outset;
     border-style: inset;
@@ -111,7 +111,7 @@ h2{
     border-bottom: 20px solid white;
     border-right: 10px solid rgb(145, 140, 140);
     background-color: rgb(236, 234, 234);
-    .content_post-mypage{
+    #contents{
       position: relative;
       height: 130px;
       width: 130px;
@@ -123,7 +123,7 @@ h2{
       margin: 20px 0 15px 9px;
     }  
   }
-  .display-inbox2{
+  #inbox2{
     height: 147px;
     border-style: outset;
     border-style: inset;

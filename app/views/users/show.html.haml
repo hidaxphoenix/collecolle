@@ -7,12 +7,12 @@
         %p.user-post
           = @nickname
           さんのコレクション一覧
-        .display-box
-          .display-inbox1
+        .display-box#box1
+          .display-inbox1#inbox1
             - @posts.each do |post|
-              .content_post-mypage{:style => "background-image: url(#{post.image});"}
-          .display-inbox2
-          .display-inbox2
-          .display-inbox2 
+              .content_post-mypage#contents{:style => "background-image: url(#{post.image});"}
+          .display-inbox2#inbox2
+          .display-inbox2#inbox2
+          .display-inbox2#inbox2
         = paginate(@posts)
 
