@@ -96,13 +96,26 @@
   }
 }
 // devise
-// register
+// アカウント新規登録画面
 .contents-row-id-registration{
   .label-box{
     margin-left: 15%;
   }
   input{
     width: 70%;
-
+  }
+}
+// ログイン画面
+.contents-row-login{
+  .label-box{
+    text-align-last: left;
+    margin-left: 15%;
+  }
+  input{
+    width: 70%;
+  }
+  .remember-btn{
+    width: 5%;
+    margin-right: 65%;
   }
 }
