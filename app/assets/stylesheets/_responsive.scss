@@ -1,4 +1,6 @@
 @media (max-width: 670px) {
+
+// post.index
   .split{
     width: 100%;
     position: relative;
@@ -91,5 +93,16 @@
       margin-bottom: 50px;
       
     }
+  }
+}
+// devise
+// register
+.contents-row-id-registration{
+  .label-box{
+    margin-left: 15%;
+  }
+  input{
+    width: 70%;
+
   }
 }
