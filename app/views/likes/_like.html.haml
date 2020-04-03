@@ -14,7 +14,7 @@
         %span.grey-text.text-darken-2
           = post.likes_count
 - else
-  - if post.likes_count > 0
+  - unless post.likes_count.nil?
     .vertical_like
       いいね
       %i.fas.fa-star
