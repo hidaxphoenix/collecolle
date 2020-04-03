@@ -13,13 +13,15 @@
       width: 100%;
       height: 240px;
       position: static;
-      
+      .header{
+        width: 100vh;
+      }
       .main-icons{
-        width: 100%;
+        width: 100vw;
         height: 100px;
         .icon-box{
           margin: 0;
-          width: 100%;
+          width: 100vh;
           height: 100px;
           a{
             .fas{
