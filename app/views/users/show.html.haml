@@ -10,7 +10,8 @@
         .display-box
           .display-inbox1#inbox1
             - @posts.each do |post|
-              .content_post-mypage#contents{:style => "background-image: url(#{post.image});"}
+              = link_to post_path(post.id), method: :get do
+                .content_post-mypage#contents{:style => "background-image: url(#{post.image});"}
           .display-inbox2#inbox2
           .display-inbox2#inbox2
           .display-inbox2#inbox2
