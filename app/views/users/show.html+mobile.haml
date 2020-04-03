@@ -1,0 +1,17 @@
+.split
+  .split-item.split-left
+    = render "posts/left-index"
+  .split-item.split-right
+    .split-right__inner
+      .contents-box
+        %p.user-post
+          = @nickname
+          さんのコレクション一覧
+        .display-box-rsp
+          .display-inbox1-rsp
+            - @posts.each do |post|
+              .content_post-mypage-rsp{:style => "background-image: url(#{post.image});"}
+          .display-inbox2-rsp
+          .display-inbox2-rsp
+          .display-inbox2-rsp
+        = paginate(@posts)

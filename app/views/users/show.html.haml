@@ -7,7 +7,7 @@
         %p.user-post
           = @nickname
           さんのコレクション一覧
-        .display-box#box1
+        .display-box
           .display-inbox1#inbox1
             - @posts.each do |post|
               .content_post-mypage#contents{:style => "background-image: url(#{post.image});"}
