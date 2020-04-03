@@ -1,46 +1,51 @@
 @media (max-width: 670px) {
   .split{
-    width: 100vw;
+    width: 100%;
+    position: relative;
   }
   .split-item{
     display: block;
-    width: 100vw;
+    width: 100%;
   }
   // 左側
   .split-left{
     position: static;
     .split-left__inner{
-      width: 100vw;
-      height: 240px;
+      width: 100%;
+      height: 210px;
       position: static;
       .header{
-        width: 100vw;
+        width: 100%;
       }
       .main-icons{
-        width: 100vw;
-        height: 100px;
+        width: 100%;
+        height: 90px;
         .icon-box{
           margin: 0;
-          width: 100vw;
+          width: 100%;
           height: 100px;
+          text-align: center;
           a{
             .fas{
-              font-size: 30px;
+              font-size: 25px;
               margin-right: 0;
               margin-left: 13px;
               margin-bottom: 0px;
             }
             .fas.fa-robot{
-              margin-left: 13px;
+              // margin-left: 13px;
             }
             .fas.fa-running{
-              // margin-left: 140px;
+            }
+            .fas.fa-feather-alt{
+              padding-right: 15px;
             }
           }
         }
       }
       .search-form{
-        padding-top: 10px;
+        padding-top: 0px;
+        padding-bottom: 10px;
         .search-input{
           width: 280px;
           left: 50px;
@@ -50,15 +55,14 @@
         }
       }
       .footer{
-        left: 90px;
-        position: initial;
+        z-index: 100;
       }
     }
   }
   // 右側
   .split-right__inner{
     .contents-box{
-      width: 100vw;
+      width: 100%;
       .contents_post{
         margin-left:26px;
       }
