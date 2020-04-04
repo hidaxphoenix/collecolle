@@ -268,8 +268,11 @@ body{
   height: 100vh;
   overflow: scroll;
   .contents-box{
-    width: 700px;
+    width: 100%;
     margin: 0 auto;
+    a{
+      text-decoration: none;
+    }
     .contents_post{
       position: relative;
       height: 190px;
