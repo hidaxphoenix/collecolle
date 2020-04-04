@@ -111,17 +111,20 @@ h2{
     border-bottom: 20px solid white;
     border-right: 10px solid rgb(145, 140, 140);
     background-color: rgb(236, 234, 234);
-    .content_post-mypage{
-      position: relative;
-      height: 130px;
-      width: 130px;
-      color: #fff;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center center;
-      display: inline-block;
-      margin: 20px 0 15px 18px;
-    }  
+    a{
+      text-decoration: none;
+      .content_post-mypage{
+        position: relative;
+        height: 130px;
+        width: 130px;
+        color: #fff;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        display: inline-block;
+        margin: 20px 0 15px 18px;
+      } 
+    }
   }
   .display-inbox2{
     height: 147px;

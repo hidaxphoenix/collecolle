@@ -1,13 +1,13 @@
 // 詳細ページ
 .contents-box-show{
-  width: 700px;
+  width: 100%;
   .contents-post-box-show{
-    height: 480px;
-    width: 600px;
+    height: 520px;
+    width: 450px;
     margin: 0 auto;
     .contents-post-show{
-      height: 400px;
-      width: 600px;
+      height: 450px;
+      width: 450px;
       color: #fff;
       background-size: cover;
       background-position: center center;
@@ -15,10 +15,22 @@
       box-shadow: 0 0 10px rgba(41, 41, 41, 0.2);
       display:inline-block;
       position: relative;
-      margin-top: 40px;
+      margin-top: 20px;
       .more{
         text-align: right;
+        margin-right: 10px;
         .arrow{
+        }
+        .more_list{
+          .edit-tag{
+            font-family: 'FOT-筑紫A丸ゴシック Std B', '游ゴシック Medium', 'Yu Gothic Medium', '游ゴシック体', YuGothic, 'Hiragino Sans', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, sans-serif;
+            -webkit-text-stroke: 0.5px #ff8228; 
+            color: #fff;
+          }
+          .delete-tag{
+            -webkit-text-stroke: 0.5px #ff8228; 
+            color: #fff;
+          }
         }
       }
       p{
@@ -31,19 +43,22 @@
         font-size: 15px;
         z-index: 2;
         font-weight: bold;
-        color: #ff8228;
+        color: #fff;
         width: 600px;
+        -webkit-text-stroke: 0.5px #ff8228; 
       }
       .name{
         position: absolute;
         right: 15px;
         bottom: 15px;
         z-index: 2;
-        font-size: 13px;
+        font-size: 15px;
+        
       }
       a{
         display: block;
-        color: #ff8228;
+        color: #fff;
+        -webkit-text-stroke: 0.5px #ff8228; 
         text-decoration: none;
       }
       h4{
@@ -54,11 +69,15 @@
     } 
   }
   .likes-btn{
-    margin-left: 50px;
+    // padding-bottom: 50px;
+    position: absolute;
+    bottom: 280px;
+    margin-left: 135px;
     a{
       text-decoration: none;
       color: #ff8228;
       .vertical_like{
+
         i{
           .red-text{
           }
@@ -69,9 +88,11 @@
   .container{
     position: relative;
     textarea{
-      width: 500px;
+      width: 350px;
       height: 70px;
-      margin-left: 50px;
+      margin-left: 135px;
+      margin-top: 20px;
+      
     }
     .show-btn{
       width:90px;
@@ -80,21 +101,21 @@
       color: #FFF;
       border-radius: 8px;
       position: absolute;
-      top: 10px;
+      top: 30px;
       margin-left: 10px;
     }
-    p{
-      color: #ff8228;
-      text-align: center;
-      font-size: 13px;
-      margin-left: 40px;
-      width: 600px;
-      margin: 0 auto;
-      text-align: center;
-    }
+    // p{
+    //   color: #ff8228;
+    //   text-align: center;
+    //   font-size: 13px;
+    //   margin-left: 40px;
+    //   width: 600px;
+    //   margin: 0 auto;
+    //   text-align: center;
+    // }
     .comments{
       color: #ff8228;
-      width: 600px;
+      width: 450px;
       margin: 0 auto;
       font-size: 15px;
       text-align: left;
