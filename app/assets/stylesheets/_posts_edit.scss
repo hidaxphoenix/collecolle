@@ -1,2 +1,15 @@
 // 編集画面
 
+.edit-submit-btn {
+  text-align: center;
+  width: 300px;
+  margin-left: 130px;
+  background-color: #ff8228;
+  border-radius: 20px;
+  color: #fff;
+  border: 0;
+  font-size: 18px;
+  &:hover {
+    background-color: #ff8228;
+  }
+}

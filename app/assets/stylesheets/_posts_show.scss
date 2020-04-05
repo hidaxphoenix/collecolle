@@ -71,7 +71,7 @@
   .likes-btn{
     // padding-bottom: 50px;
     position: absolute;
-    bottom: 230px;
+    bottom: 270px;
     margin-left: 135px;
     a{
       text-decoration: none;
@@ -84,18 +84,13 @@
       }
     }
   }
-  #likes_buttons{
-    position: absolute;
-    bottom: 230px;
-    margin-left: 135px;
-    .vertical_like{
-      color: #ff8228;
+    .vertical_like_login{
       i{
         .red-text{
         }
       }
     }
-  }
+  
   .container{
     position: relative;
     textarea{

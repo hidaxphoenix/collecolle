@@ -15,13 +15,13 @@
           = post.likes_count
 - else
   - unless post.likes_count.nil?
-    .vertical_like
+    .vertical_like_nologin
       いいね
       %i.fas.fa-star
       %span.red-text
         = post.likes_count
   - else
-    .vertical_like
+    .vertical_like_nologin
       いいね
       %i.fas.fa-star
       %span.grey-text.text-darken-2

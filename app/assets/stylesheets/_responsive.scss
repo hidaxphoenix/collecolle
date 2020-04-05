@@ -186,12 +186,25 @@
       bottom: 330px;
       margin-left: 7%;
     }
+    #likes_buttons{
+      position: absolute;
+      bottom: 230px;
+      margin-left: 135px;
+    }
     .container{
       margin-top: 30px;
       textarea{
         width: 75%;
         height: 70px;
         margin-left: 5%;
+      }
+      strong{
+        width: 85%;
+        p{
+          font-size: 16px;
+          margin-left: 5%;
+          margin-right: 5%;
+        }
       }
       .show-btn{
         width:13%;
@@ -209,6 +222,28 @@
       .comments{
         width: 90%;
       }
+    }
+  }
+  // 編集ページ
+  .form{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    .collection_select{
+
+    }
+    .edit-field{
+      width:94%;
+    }
+    .edit-textarea{
+      width:94%;
+    }
+    .edit-submit-btn{
+      width: 70%;
+      margin-left: 15%;
+      background-color: #ff8228;
+      border-radius: 20px;
+      color: #fff;
     }
   }
 }
