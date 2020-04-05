@@ -1,4 +1,5 @@
 = form.collection_select :tag_ids, Tag.all, :id, :name, placeholder: "画像Urlを貼り付けてください"
+　カテゴリーを選択してください
 = form.file_field :image, placeholder: "画像Urlを貼り付けてください"
 = form.text_area :text, placeholder: "文章" , rows: "10"
 = form.submit "投稿", class:"submit-btn"
