@@ -77,10 +77,21 @@
       text-decoration: none;
       color: #ff8228;
       .vertical_like{
-
         i{
           .red-text{
           }
+        }
+      }
+    }
+  }
+  #likes_buttons{
+    position: absolute;
+    bottom: 230px;
+    margin-left: 135px;
+    .vertical_like{
+      color: #ff8228;
+      i{
+        .red-text{
         }
       }
     }
@@ -92,7 +103,14 @@
       height: 70px;
       margin-left: 135px;
       margin-top: 20px;
-      
+    }
+    strong{
+      p{
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        color: #ff8228;
+      }
     }
     .show-btn{
       width:90px;
