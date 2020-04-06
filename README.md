@@ -7,7 +7,7 @@
 
 ![コレクション詳細](https://i.gyazo.com/e18730ff55dc8ca8dc928bd0566514da.jpg)
 
-![マイページ](https://i.gyazo.com/64202ac9c4569293f1f9a5b3ea0c2d57.png)
+![マイページ](https://gyazo.com/9b340e0c4d4b3afcf8bc1256ea44c9f0)
 
 ## 概要 (Discription)
 web上でコレクションを自慢(シェア)＆管理ができる。<br>
@@ -16,7 +16,7 @@ web上でコレクションを自慢(シェア)＆管理ができる。<br>
 加えたいコレクションの写真を投稿 → 投稿した写真がコレクションとしてマイページに溜まっていく。
 
 ## 本番環境URL (Application URL)
-http://18.178.147.81:5000/
+https://www.collecolle.tech/
 
 ## 制作背景 (Why I make this)
 目的：いつでも自慢のコレクションを眺めることができるアプリ
