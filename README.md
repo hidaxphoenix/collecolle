@@ -7,7 +7,7 @@
 
 ![コレクション詳細](https://i.gyazo.com/e18730ff55dc8ca8dc928bd0566514da.jpg)
 
-![マイページ](https://gyazo.com/9b340e0c4d4b3afcf8bc1256ea44c9f0)
+![マイページ](https://i.gyazo.com/9b340e0c4d4b3afcf8bc1256ea44c9f0.jpg)
 
 ## 概要 (Discription)
 web上でコレクションを自慢(シェア)＆管理ができる。<br>
