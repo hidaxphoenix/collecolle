@@ -44,17 +44,24 @@ My Shelf（コレクション棚）機能, 機能説明ページ の実装
 ### Association
 - has_many :posts
 - has_many  :comments
+- has_many :likes
+- has_many :liked_posts
+
 
 ## postテーブル
 |Column|Type|Options|
 |------|----|-------|
-|name|text||
-|text|text||
-|image|text||
-|user_id|integer|null: false, foreign_key: true|
+|text|string||
+|image|string||
+|user_id|integer||
+|likes_count|integer||
 ### Association
 - belongs_to :user
 - has_many :comments
+- has_many :likes
+- has_many :posttags
+- has_many :tags
+
 
 ## commentテーブル
 |Column|Type|Options|
@@ -67,3 +74,31 @@ My Shelf（コレクション棚）機能, 機能説明ページ の実装
 - belongs_to :post
 
 
+## likesテーブル
+|Column|Type|Options|
+|------|----|-------|
+|text|text|null: false|
+|user_id|bigint|null: false, foreign_key: true|
+|post_id|bigint|null: false, foreign_key: true|
+### Association
+- belongs_to :user
+- belongs_to :post
+
+
+## tagsテーブル
+|Column|Type|Options|
+|------|----|-------|
+|text|name||
+### Association
+- has_many :posttags
+- has_many :post
+
+
+## posttagsテーブル
+|Column|Type|Options|
+|------|----|-------|
+|post_id|bigint||
+|tag_id|bigint||
+### Association
+- belongs_to :post
+- belongs_to :tag
