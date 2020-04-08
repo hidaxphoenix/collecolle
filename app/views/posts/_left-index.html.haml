@@ -4,6 +4,8 @@
       .header__nav__title
         = link_to root_path, class:"main-title" do
           Collecolle
+      .header__nav__howtouse
+        = link_to "使い方", "/posts/howtouse", class:"howtouse"           
       - if user_signed_in?
         .header__nav__mypage
           = link_to "マイページ", "/users/#{current_user.id}", class: "user-mypage"
