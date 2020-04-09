@@ -18,21 +18,42 @@
   margin-top: 10%;
   display: flex;
   justify-content: center;
-  .post-pic{
-    height: 45%;
-    width: 45%;
-    background-image: image-url("post.png");
-    background-size: cover;
-    background-position: center center;
-    border: 0.5px solid #EA5704;
-    margin-right: 5%;
+  .post-pic-box{
+    height: 40%;
+    width: 50%;
+    margin-right: 3%;
+    .post-pic{
+      height: 100%;
+      width: 100%;
+      background-image: image-url("post.png");
+      background-size: cover;
+      background-position: center center;
+      border: 0.5px solid #EA5704;
+      margin-right: 5%;
+    }
+    .post-text{
+      text-align: center;
+      color: rgb(75, 73, 73);
+      font-size: 20px;
+      margin-top: 5%;
+    }
   }
-  .show-pic{
-    height: 45%;
-    width: 45%;
-    background-image: image-url("show.jpg");
-    background-size: cover;
-    background-position: center center;
-    border: 0.5px solid #EA5704;
+  .show-pic-box{
+    height: 40%;
+    width: 50%;
+    .show-pic{
+      height: 100%;
+      width: 100%;
+      background-image: image-url("show.jpg");
+      background-size: cover;
+      background-position: center center;
+      border: 0.5px solid #EA5704;
+    }
+    .show-text{
+      text-align: center;
+      color: rgb(75, 73, 73);
+      font-size: 20px;
+      margin-top: 5%;
+    }
   }
 }
