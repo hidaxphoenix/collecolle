@@ -1,0 +1,38 @@
+.howtouse-logo{
+  color: #EA5704;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 2%;
+}
+.howtouse-subscribe{
+  font-size: 35px;
+  text-align: center;
+  margin-top: 3%;
+  color: rgb(75, 73, 73);
+  font-family: "Helvetica Neue", "ヒラギノ角ゴ Pro W6", "Hiragino Kaku Gothic Pro", "游ゴシック", "Yu Gothic", YuGothic, sans-serif;
+}
+.howtouse-description-picbox{
+  width: 90%;
+  height: 100vh;
+  margin: 0 auto;
+  margin-top: 10%;
+  display: flex;
+  justify-content: center;
+  .post-pic{
+    height: 45%;
+    width: 45%;
+    background-image: image-url("post.png");
+    background-size: cover;
+    background-position: center center;
+    border: 0.5px solid #EA5704;
+    margin-right: 5%;
+  }
+  .show-pic{
+    height: 45%;
+    width: 45%;
+    background-image: image-url("show.jpg");
+    background-size: cover;
+    background-position: center center;
+    border: 0.5px solid #EA5704;
+  }
+}
