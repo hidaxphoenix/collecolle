@@ -3,7 +3,7 @@
     = render "posts/left-index"
   .split-item.split-right
     .split-right__inner
-      .contents-box-
+      .contents-box
         .howtouse-logo
           Collecolle
         .howtouse-subscribe
@@ -38,3 +38,7 @@
             %ul
               %li 気に入った投稿があれば「いいね」しよう
               %li コメントもしてみよう
+        .login-box1
+          = link_to "新規登録をする", new_user_registration_path, class: 'sign-up'
+        .login-box2
+          = link_to "ログイン", new_user_session_path, class: 'login'

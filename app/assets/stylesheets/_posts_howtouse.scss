@@ -16,6 +16,7 @@
   height: 100vh;
   margin: 0 auto;
   margin-top: 10%;
+  margin-bottom: 30%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -127,5 +128,23 @@
         font-size: 15px;
       }
     }
+  }
+}
+.login-box1{
+  text-align: center;
+  margin-bottom: 20px;
+  .sign-up{
+    text-decoration: none;
+    color: #EA5704;
+    font-size: 25px;
+  }
+}
+.login-box2{
+  text-align: center;
+  margin-bottom: 50px;
+  .login{
+    text-decoration: none;
+    color:#EA5704;
+    font-size: 25px;
   }
 }
