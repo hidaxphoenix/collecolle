@@ -18,10 +18,38 @@
   margin-top: 10%;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  .login-pic-box{
+    height: 40%;
+    width: 45%;
+    margin-right: 5%;
+    .login-pic{
+      height: 100%;
+      width: 100%;
+      background-image: image-url("login.png");
+      background-size: cover;
+      background-position: center center;
+      border: 0.5px solid #EA5704;
+      margin-right: 5%;
+    }
+    .login-text{
+      text-align: center;
+      color: rgb(75, 73, 73);
+      font-size: 20px;
+      margin-top: 5%;
+    }
+    ul{
+      text-align: left;
+      margin-top: 3%;
+      color: rgb(75, 73, 73);
+      li{
+        font-size: 15px;
+      }
+    }
+  }
   .post-pic-box{
     height: 40%;
-    width: 50%;
-    margin-right: 3%;
+    width: 45%;
     .post-pic{
       height: 100%;
       width: 100%;
@@ -29,7 +57,6 @@
       background-size: cover;
       background-position: center center;
       border: 0.5px solid #EA5704;
-      margin-right: 5%;
     }
     .post-text{
       text-align: center;
@@ -37,10 +64,20 @@
       font-size: 20px;
       margin-top: 5%;
     }
+    ul{
+      text-align: left;
+      margin-top: 3%;
+      color: rgb(75, 73, 73);
+      li{
+        font-size: 15px;
+      }
+    }
   }
   .show-pic-box{
     height: 40%;
-    width: 50%;
+    width: 45%;
+    margin-right: 5%;
+    margin-top: 30%;
     .show-pic{
       height: 100%;
       width: 100%;
@@ -54,6 +91,41 @@
       color: rgb(75, 73, 73);
       font-size: 20px;
       margin-top: 5%;
+    }
+    ul{
+      text-align: left;
+      margin-top: 3%;
+      color: rgb(75, 73, 73);
+      li{
+        font-size: 15px;
+      }
+    }
+  }
+  .edit-pic-box{
+    height: 40%;
+    width: 45%;
+    margin-top: 30%;
+    .edit-pic{
+      height: 100%;
+      width: 100%;
+      background-image: image-url("edit.jpg");
+      background-size: cover;
+      background-position: center center;
+      border: 0.5px solid #EA5704;
+    }
+    .edit-text{
+      text-align: center;
+      color: rgb(75, 73, 73);
+      font-size: 20px;
+      margin-top: 5%;
+    }
+    ul{
+      text-align: left;
+      margin-top: 3%;
+      color: rgb(75, 73, 73);
+      li{
+        font-size: 15px;
+      }
     }
   }
 }
