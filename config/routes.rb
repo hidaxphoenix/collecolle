@@ -10,6 +10,9 @@ Rails.application.routes.draw do
     member do
       get 'tagsearch'
     end
+    collection do
+      get 'howtouse'
+    end
   end
   resources :users, only: :show
 end

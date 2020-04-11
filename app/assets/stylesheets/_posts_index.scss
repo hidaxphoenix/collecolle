@@ -84,6 +84,14 @@ body{
             color: white;
           }
         }
+        &__howtouse{
+          font-size: 18px;
+          margin-left: 30px;
+          .howtouse{
+            text-decoration: none;
+            color: white;
+          }
+        }
         &__mypage{
           font-size: 18px;
           margin-left: 50px;
@@ -107,8 +115,8 @@ body{
               color: white;
             }
           }
-          .login-nav{
-            padding-top: 10px;
+        .login-nav{
+            // padding-top: 10px;
             .sign-up{
               text-decoration: none;
               color: white;

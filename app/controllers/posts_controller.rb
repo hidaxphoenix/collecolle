@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
 before_action :set_post, only: [:edit, :show]
-before_action :move_to_index, except: [:index, :show, :search, :tagsearch]
+before_action :move_to_index, except: [:index, :show, :search, :tagsearch, :howtouse]
 before_action :getting_tag
 
   def index
@@ -41,6 +41,9 @@ before_action :getting_tag
   def tagsearch
     # binding.pry
     @tag = Tag.find(params[:id])
+  end
+
+  def howtouse
   end
 
   private

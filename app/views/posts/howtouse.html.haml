@@ -1,0 +1,44 @@
+.split
+  .split-item.split-left
+    = render "posts/left-index"
+  .split-item.split-right
+    .split-right__inner
+      .contents-box
+        .howtouse-logo
+          Collecolle
+        .howtouse-subscribe
+          自慢のコレクションをシェア&管理しよう
+        .howtouse-description-picbox
+          .login-pic-box
+            .login-pic
+            .login-text
+              アカウント作成 & ログイン
+            %ul
+              %li まずはアカウントを作成しよう
+              %li アカウントがあればログインしよう
+              
+          .post-pic-box
+            .post-pic
+            .post-text
+              投稿する（写真データ）
+            %ul
+              %li 自慢のコレクションを投稿しよう
+              %li 他のユーザーからの反応があるかも
+          .show-pic-box
+            .show-pic
+            .show-text
+              マイページで管理
+            %ul
+              %li マイページで自分の投稿を管理しよう
+              %li 自動でショーケースに飾られるよ
+          .edit-pic-box
+            .edit-pic
+            .edit-text
+              皆んなのコレクション
+            %ul
+              %li 気に入った投稿があれば「いいね」しよう
+              %li コメントもしてみよう
+        .login-box1
+          = link_to "新規登録をする", new_user_registration_path, class: 'sign-up'
+        .login-box2
+          = link_to "ログイン", new_user_session_path, class: 'login'

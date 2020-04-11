@@ -210,15 +210,6 @@
         width:13%;
         height: 50px;
       }
-      // p{
-      //   color: #ff8228;
-      //   text-align: center;
-      //   font-size: 13px;
-      //   margin-left: 40px;
-      //   width: 85%;
-      //   margin: 0 auto;
-      //   text-align: center;
-      // }
       .comments{
         width: 90%;
       }
@@ -244,6 +235,73 @@
       background-color: #ff8228;
       border-radius: 20px;
       color: #fff;
+    }
+  }
+  // 使い方ページ
+  .howtouse-subscribe{
+    font-size: 20px;
+  }
+  .howtouse-description-picbox{
+    height: 60vh;
+    .login-pic-box{
+      .login-pic{
+      }
+      .login-text{
+        font-size: 13px;
+      }
+      ul{
+        li{
+          font-size: 8px;
+        }
+      }
+    }
+    .post-pic-box{
+      .post-pic{
+      }
+      .post-text{
+        font-size: 13px;
+      }
+      ul{
+        li{
+          font-size: 8px;
+        }
+      }
+    }
+    .show-pic-box{
+      .show-pic{
+      }
+      .show-text{
+        font-size: 13px;
+      }
+      ul{
+        li{
+          font-size: 8px;
+        }
+      }
+    }
+    .edit-pic-box{
+      .edit-pic{
+      }
+      .edit-text{
+        font-size: 13px;
+      }
+      ul{
+        li{
+          font-size: 8px;
+        }
+      }
+    }
+  }
+  .login-box1{
+    margin-bottom: 10px;
+    margin-top: 150px;
+    .sign-up{
+      font-size: 15px;
+    }
+  }
+  .login-box2{
+    .login{
+      font-size: 15px;
     }
   }
 }
